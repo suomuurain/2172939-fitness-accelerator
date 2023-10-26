@@ -38,26 +38,8 @@
 
 // Desktop first
 
-@mixin vp-1919 {
-  @media (max-width: ($vp-1920 - 1px)) {
-    @content;
-  }
-}
-
-@mixin vp-1439 {
-  @media (max-width: ($vp-1440 - 1px)) {
-    @content;
-  }
-}
-
-@mixin vp-1279 {
-  @media (max-width: ($vp-1280 - 1px)) {
-    @content;
-  }
-}
-
-@mixin vp-1023 {
-  @media (max-width: ($vp-1024 - 1px)) {
+@mixin vp-1199 {
+  @media (max-width: ($vp-1200 - 1px)) {
     @content;
   }
 }
@@ -73,6 +55,21 @@
     @content;
   }
 }
+
+// @mixin heading-h1 {
+//   font-family: "Alumni Sans", "Arial", sans-serif;
+//   font-size: 92px;
+//   line-height: 110px;
+//   font-weight: 600;
+//   letter-spacing: 0.05em;
+//   text-transform: uppercase;
+//   -webkit-text-stroke-width: 4px;
+
+//   @include vp-1199 {
+//     font-size: 72px;
+//     line-height: 86px;
+//   }
+// }
 
 // Mobile first
 
