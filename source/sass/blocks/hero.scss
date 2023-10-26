@@ -82,7 +82,6 @@
   margin: -37px 0 0 0;
   padding: 0;
   align-self: flex-end;
-  text-transform: uppercase;
   grid-column: 2/3;
 
   font-family: $ff-alumni;
@@ -95,13 +94,11 @@
 
   @include vp-1199 {
     margin-bottom: -15px;
-    text-transform: none;
 
     font-size: 72px;
     font-style: normal;
     font-weight: 800;
     line-height: 85px; /* 118.056% */
-    text-transform: uppercase;
     letter-spacing: 0;
   }
 
