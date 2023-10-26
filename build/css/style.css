@@ -623,7 +623,6 @@ button,
 }
 @media (max-width: 1199px) {
   .header__phone-link {
-    font-size: 24px;
     font-size: 28px;
     letter-spacing: 0.06rem;
   }
@@ -742,7 +741,6 @@ button,
   margin: -37px 0 0 0;
   padding: 0;
   align-self: flex-end;
-  text-transform: uppercase;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -757,12 +755,10 @@ button,
 @media (max-width: 1199px) {
   .hero__info h1 {
     margin-bottom: -15px;
-    text-transform: none;
     font-size: 72px;
     font-style: normal;
     font-weight: 800;
     line-height: 85px; /* 118.056% */
-    text-transform: uppercase;
     letter-spacing: 0;
   }
 }
@@ -879,6 +875,180 @@ button,
   .hero img {
     display: none;
   }
+}
+
+.footer {
+  color: #ffffff;
+  background-color: #030a1a;
+}
+
+.footer__wrapper {
+  margin: 0 auto;
+  padding: 41px 103px 40px;
+  max-width: 1366px;
+  width: 100%;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 1199px) {
+  .footer__wrapper {
+    padding: 46px 45px;
+  }
+}
+@media (max-width: 767px) {
+  .footer__wrapper {
+    padding: 30px 15px 45px;
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__logo-link img {
+    display: block;
+    margin: 0 0 26px;
+  }
+}
+
+.footer__navigation-list {
+  margin: 0 12px 0 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+}
+@media (max-width: 1199px) {
+  .footer__navigation-list {
+    margin: 0 5px 0 0;
+    padding: 0;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .footer__navigation-list {
+    margin: 0 0 54px;
+    padding: 0;
+    -webkit-column-gap: 35px;
+       -moz-column-gap: 35px;
+            column-gap: 35px;
+    row-gap: 16px;
+  }
+}
+
+.footer__navigation-link {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+  position: relative;
+}
+.footer__navigation-link:hover::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+}
+.footer__navigation-link:focus-visible {
+  outline: 1px solid #ffffff;
+  outline-offset: 10px;
+}
+.footer__navigation-link:active {
+  outline: none;
+}
+.footer__navigation-link:active::after {
+  content: none;
+}
+.footer__navigation-link:disabled {
+  color: rgba(255, 255, 255, 0.5019607843);
+}
+
+.footer__social-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+@media (max-width: 767px) {
+  .footer__social-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.footer__social-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+.footer__social-link:hover, .footer__social-link:focus-visible {
+  background-color: #103aae;
+  fill: #ffffff;
+  outline: none;
+}
+.footer__social-link:active {
+  background-color: #102564;
+  fill: #ffffff;
+  outline: none;
+}
+.footer__social-link:disabled {
+  background-color: #ffffff;
+  opacity: 0.3;
+}
+
+.footer__social-list svg {
+  width: 14px;
+  height: 14px;
 }
 
 /* @mixin hover-focus {
