@@ -5,7 +5,8 @@
 
 .footer__wrapper {
   margin: 0 auto;
-  padding: 41px 103px 40px;
+  padding-top: 41px;
+  padding-bottom: 40px;
   max-width: 1366px;
   width: 100%;
   color: $color-white;
@@ -16,11 +17,13 @@
   align-items: center;
 
   @include vp-1199 {
-    padding: 46px 45px;
+    padding-top: 46px;
+    padding-bottom: 46px;
   }
 
   @include vp-767 {
-    padding: 30px 15px 45px;
+    padding-top: 30px;
+    padding-bottom: 45px;
     display: block;
   }
 }
