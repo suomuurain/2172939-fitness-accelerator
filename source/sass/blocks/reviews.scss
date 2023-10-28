@@ -1,0 +1,189 @@
+.reviews__wrapper {
+  position: relative;
+
+  margin: 0 auto;
+  max-width: 1366px;
+  width: 100%;
+  padding: 150px 103px 120px;
+  border-bottom: 1px solid $color-border-decoration;
+
+  @include vp-1199 {
+    padding: 96px 45px 99px;
+    border: none;
+  }
+
+  @include vp-767 {
+    padding: 66px 15px 70px;
+  }
+}
+
+.reviews h2 {
+  margin: 0 0 46px;
+  text-align: center;
+
+  font-family: $ff-alumni;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 54px; /* 100% */
+  letter-spacing: 1.62px;
+
+  @include vp-1199 {
+    margin: 0 0 42px;
+
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 42px; /* 100% */
+    letter-spacing: 1.26px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 44px;
+
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 100% */
+    letter-spacing: 0.96px;
+  }
+}
+
+.reviews__swiper {
+  box-shadow: 0px 0px 40px 0px $shadow;
+  width: 560px;
+
+  @include vp-1199 {
+    width: 580px;
+  }
+
+  @include vp-767 {
+    width: 226px;
+  }
+}
+
+.reviews__slide-wrapper {
+  position: relative;
+  padding: 60px 60px 60px 170px;
+  color: $color-white;
+  background-color: $btn-border;
+  cursor: grab;
+
+  display: flex;
+  flex-direction: column;
+  color: $color-default-white;
+
+  @include vp-1199 {
+    padding: 60px 65px 60px 175px;
+  }
+
+  @include vp-767 {
+    padding: 108px 25px 30px;
+  }
+}
+
+.reviews__slide-wrapper span {
+  margin: 0 0 21px;
+  padding: 0;
+
+  font-family: $ff-roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 100% */
+
+  @include vp-1199 {
+    margin: 0 0 13px;
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 100% */
+  }
+
+  @include vp-767 {
+    margin: 0 0 16px;
+    align-self: center;
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 111.111% */
+  }
+}
+
+.reviews__slide-wrapper p {
+  margin: 0;
+  padding: 0;
+
+  font-family: $ff-roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.1px;
+
+  @include vp-767 {
+    text-align: center;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px; /* 157.143% */
+  }
+}
+
+.reviews__slide img {
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 60px;
+
+  @include vp-1199 {
+    left: 65px;
+  }
+
+  @include vp-767 {
+    top: 30px;
+    left: calc(50% - 34px);
+  }
+}
+
+.reviews__swiper-button {
+  color: $color-basic;
+  top: 64%;
+
+  &--prev {
+    left: calc((100% - 560px) / 2 - 76px);
+    transform: translate(0, -50%);
+  }
+
+  &--next {
+    right: calc((100% - 560px) / 2 - 76px);
+    transform: translate(0, -50%);
+  }
+
+  @include vp-1199 {
+    top: 62%;
+
+    &--prev {
+      left: 25px;
+    }
+
+    &--next {
+      right: 25px;
+    }
+  }
+
+  @include vp-767 {
+    top: 61%;
+
+    &--prev {
+      left: 10px;
+    }
+
+    &--next {
+      right: 10px;
+    }
+  }
+}
