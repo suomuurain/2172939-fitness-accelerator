@@ -1,3 +1,11 @@
+.reviews {
+  border-bottom: 1px solid $color-border-decoration;
+
+  @include vp-1199 {
+    border: none;
+  }
+}
+
 .reviews__wrapper {
   position: relative;
 
@@ -5,7 +13,6 @@
   max-width: 1366px;
   width: 100%;
   padding: 150px 103px 120px;
-  border-bottom: 1px solid $color-border-decoration;
 
   @include vp-1199 {
     padding: 96px 45px 99px;

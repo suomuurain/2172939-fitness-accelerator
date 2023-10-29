@@ -239,7 +239,7 @@
   font-variant: initial;
   line-height: 1;
 
-  color: $color-basic;
+  color: #102654;
   width: 16px;
   height: 32px;
 
@@ -255,15 +255,15 @@
 .swiper-button-next:focus,
 .swiper-button-prev:focus,
 .swiper-button-prev:hover {
-  border: 1px solid $color-basic;
+  border: 1px solid #102654;
 }
 
 .swiper-button-next:active,
 .swiper-button-prev:active {
-  background-color: $color-basic;
+  background-color: #102654;
 
   &::after {
-    color: $color-white;
+    color: #ffffff;
   }
 }
 
