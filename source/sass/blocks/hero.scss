@@ -175,8 +175,8 @@
   }
 
   &:disabled {
-    color: $color-white-opacity;
-    border: 2px solid $color-white-opacity;
+    color: $color-white-opacity-50;
+    border: 2px solid $color-white-opacity-50;
   }
 
   @include vp-1199 {

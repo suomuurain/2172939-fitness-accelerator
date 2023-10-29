@@ -96,7 +96,7 @@
   padding: 9px 0;
   width: 100%;
   border: 0;
-  border-bottom: 1px solid $color-white-opacity;
+  border-bottom: 1px solid $color-white-opacity-50;
   color: $color-white;
   background-color: transparent;
   font-family: $ff-roboto;
@@ -200,7 +200,7 @@
   }
 
   &:disabled {
-    color: $color-white-opacity;
-    border: 2px solid $color-white-opacity;
+    color: $color-white-opacity-50;
+    border: 2px solid $color-white-opacity-50;
   }
 }
