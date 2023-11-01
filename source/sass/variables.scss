@@ -29,10 +29,11 @@ $shadow:rgba(28, 51, 116, 0.2);
 
 // Gradient
 
-$text-gradient: linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
-$btn-gradient: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
-$hero-gradient: conic-gradient(from 90deg at 16.03% 39.06%, #b80027, #003d85 62deg, #b80027 335deg);
-$promo-gradient: linear-gradient(129deg, #d10a42 0%, #00359f 100%);
+$text-gradient: linear-gradient(128deg, #d10a42 0%, #0041ca 45.58%);
+$btn-gradient: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
+$hero-gradient-desktop: linear-gradient(90deg, #1C3477 0%, #1C3477 0.01%, #1A3578 39.11%, #73184B 75.5%, #B4022A 100%);
+$hero-gradient-tablet: linear-gradient(90deg, #1C3477 0%, #1C3477 0.01%, #1A3578 39.76%, #73184B 75.5%, #B4022A 100%);
+$promo-gradient: linear-gradient(165deg, #d10a42 0%, #00359f 100%);
 
 // Typography
 // ---------------------------------
@@ -63,7 +64,7 @@ $trans-600: 0.6s $tf-default;
 
 $vp-320: 320px;
 $vp-768: 768px;
-$vp-1200: 1200px;
+$vp-1366: 1366px;
 
 // Retina
 // ---------------------------------

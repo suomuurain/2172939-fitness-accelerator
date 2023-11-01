@@ -3,7 +3,7 @@
   background-color: $color-basic;
   color: $color-white;
 
-  @include vp-1199 {
+  @include vp-1365 {
     padding: 101px 132px 99px 132px;
   }
 
@@ -24,7 +24,7 @@
   letter-spacing: 1.62px;
   color: $color-white;
 
-  @include vp-1199 {
+  @include vp-1365 {
     margin: 0 0 26px;
 
     font-family: $ff-alumni;
@@ -51,7 +51,7 @@
   margin: 0 0 0 auto;
   max-width: 410px;
 
-  @include vp-1199 {
+  @include vp-1365 {
     margin: 0;
     max-width: none;
   }
@@ -64,7 +64,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  @include vp-1199 {
+  @include vp-1365 {
     margin: 0 0 28px;
     column-gap: 60px;
   }
@@ -81,7 +81,7 @@
 .free-visit__form label {
   width: calc(50% - 15px);
 
-  @include vp-1199 {
+  @include vp-1365 {
     width: calc(50% - 30px);
   }
 
@@ -135,7 +135,7 @@
     font-weight: 400;
     line-height: 22px; /* 157.143% */
 
-    @include vp-1199 {
+    @include vp-1365 {
       font-family: $ff-roboto;
       font-size: 16px;
       font-style: normal;
@@ -170,7 +170,7 @@
   letter-spacing: 0.6px;
   text-transform: uppercase;
 
-  @include vp-1199 {
+  @include vp-1365 {
     min-height: 56px;
 
     font-family: $ff-roboto;

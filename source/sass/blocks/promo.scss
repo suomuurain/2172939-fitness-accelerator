@@ -1,7 +1,7 @@
 .promo {
   padding: 121px 0 120px;
 
-  @include vp-1199 {
+  @include vp-1365 {
     padding: 101px 0 100px;
   }
 
@@ -23,7 +23,7 @@
   letter-spacing: 1.62px;
   text-align: center;
 
-  @include vp-1199 {
+  @include vp-1365 {
     margin: 0 0 40px 0;
 
     font-size: 42px;
@@ -48,7 +48,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
 
-  @include vp-1199 {
+  @include vp-1365 {
     gap: 30px;
   }
 
@@ -63,7 +63,7 @@
   grid-row: 1 / 3;
   display: flex;
 
-  @include vp-1199 {
+  @include vp-1365 {
     grid-row: auto;
     grid-column: 1 / 3;
   }
@@ -83,7 +83,7 @@
   flex-direction: column;
   flex: 1;
 
-  @include vp-1199 {
+  @include vp-1365 {
     padding: 45px 45px 40px;
   }
 
@@ -104,7 +104,7 @@
   font-weight: 700;
   line-height: 26px; /* 100% */
 
-  @include vp-1199 {
+  @include vp-1365 {
     margin: 0 0 5px;
 
     font-size: 24px;
@@ -133,7 +133,7 @@
   font-weight: 700;
   line-height: 70px; /* 100% */
 
-  @include vp-1199 {
+  @include vp-1365 {
     margin: 0 0 20px;
   }
 
@@ -230,7 +230,7 @@
 .promo__special-block img {
   flex: 1;
 
-  @include vp-1199 {
+  @include vp-1365 {
     width: 399px;
   }
 
@@ -249,7 +249,7 @@
   padding: 23px 27px 24px;
   gap: 8px;
 
-  @include vp-1199 {
+  @include vp-1365 {
     min-height: 211px;
   }
 
@@ -272,7 +272,7 @@
   font-weight: 700;
   line-height: 26px; /* 100% */
 
-  @include vp-1199 {
+  @include vp-1365 {
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
