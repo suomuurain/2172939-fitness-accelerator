@@ -5,6 +5,8 @@
 // Swiper 8.4.7
 @import "vendor/swiper";
 
+@import "vendor/data-tabs";
+
 // Global
 // ---------------------------------
 
@@ -21,6 +23,7 @@
 @import "blocks/header";
 @import "blocks/hero";
 @import "blocks/about-gym";
+@import "blocks/subscription";
 @import "blocks/games";
 @import "blocks/promo";
 @import "blocks/reviews";
