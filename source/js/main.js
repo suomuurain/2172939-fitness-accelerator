@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 
 import {initTabs} from './vendor/tabs/init-tabs';
+import './modules/jury-swiper';
 import './modules/reviews-swiper';
 
 // ---------------------------------
