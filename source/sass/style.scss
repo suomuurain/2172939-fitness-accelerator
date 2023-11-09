@@ -5,6 +5,7 @@
 // Swiper 8.4.7
 @import "vendor/swiper";
 @import "vendor/data-tabs";
+@import "vendor/data-accordion";
 
 // Global
 // ---------------------------------
@@ -25,7 +26,10 @@
 @import "blocks/subscription";
 @import "blocks/games";
 @import "blocks/jury";
+@import "blocks/advantages";
 @import "blocks/promo";
+@import "blocks/faq";
+@import "blocks/accordion";
 @import "blocks/reviews";
 @import "blocks/contact-form";
 @import "blocks/free-visit";
