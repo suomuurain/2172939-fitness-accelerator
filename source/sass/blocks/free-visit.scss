@@ -78,7 +78,7 @@
   }
 }
 
-.free-visit__form label {
+.free-visit__form-wrapper label {
   width: calc(50% - 15px);
 
   @include vp-1365 {
@@ -90,8 +90,8 @@
   }
 }
 
-.free-visit__form input[type="text"],
-.free-visit__form input[type="tel"] {
+.free-visit__form-wrapper input[type="text"],
+.free-visit__form-wrapper input[type="tel"] {
   position: relative;
   padding: 8px 0;
   width: 100%;
