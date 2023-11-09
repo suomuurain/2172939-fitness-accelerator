@@ -13,7 +13,7 @@
 }
 
 .free-visit h2 {
-  margin: 0 0 34px;
+  margin: 0 0 35px;
   padding: 0;
 
   font-family: $ff-alumni;
@@ -25,7 +25,7 @@
   color: $color-white;
 
   @include vp-1365 {
-    margin: 0 0 26px;
+    margin: 0 0 28px;
 
     font-family: $ff-alumni;
     font-size: 42px;
@@ -58,7 +58,7 @@
 }
 
 .free-visit__form-wrapper {
-  margin: 0 0 26px;
+  margin: 0 0 25px;
 
   display: flex;
   flex-wrap: wrap;
@@ -93,7 +93,7 @@
 .free-visit__form input[type="text"],
 .free-visit__form input[type="tel"] {
   position: relative;
-  padding: 9px 0;
+  padding: 8px 0;
   width: 100%;
   border: 0;
   border-bottom: 1px solid $color-white-opacity-50;

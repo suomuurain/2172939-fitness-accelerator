@@ -1,5 +1,5 @@
 .promo {
-  padding: 121px 0 120px;
+  padding: 120px 0 120px;
 
   @include vp-1365 {
     padding: 101px 0 100px;
@@ -11,7 +11,7 @@
 }
 
 .promo__wrapper h2 {
-  margin: 0 0 71px 0;
+  margin: 0 0 70px 0;
   padding: 0;
 
   color: $color-basic;
@@ -24,7 +24,7 @@
   text-align: center;
 
   @include vp-1365 {
-    margin: 0 0 40px 0;
+    margin: 0 0 39px 0;
 
     font-size: 42px;
     font-style: normal;
@@ -89,7 +89,7 @@
 
   @include vp-767 {
     align-items: center;
-    min-height: 299px;
+    min-height: 300px;
   }
 }
 
@@ -158,6 +158,11 @@
   font-weight: 300;
   line-height: 24px; /* 133.333% */
   letter-spacing: -0.15px;
+
+  @include vp-1365 {
+    letter-spacing: -0.1px;
+
+  }
 
   @include vp-767 {
     font-size: 16px;
@@ -251,6 +256,7 @@
 
   @include vp-1365 {
     min-height: 211px;
+    gap: 10px;
   }
 
   @include vp-767 {
@@ -299,15 +305,17 @@
   line-height: 24px; /* 150% */
   letter-spacing: -0.15px;
 
-  @include vp-767 {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 22px; /* 157.143% */
+  @include vp-1365 {
+    letter-spacing: 0;
   }
 
   @include vp-767 {
     margin: 0 0 19px;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px; /* 157.143% */
   }
 }
 

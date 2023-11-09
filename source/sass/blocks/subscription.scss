@@ -33,7 +33,7 @@
   }
 
   @include vp-767 {
-    padding: 73px 0 70px;
+    padding: 74px 0 70px;
 
     &::after {
       content: none;
@@ -372,7 +372,7 @@
 
 .subscription__price-wrapper {
   position: relative;
-  margin: 0 0 36px;
+  margin: 0 0 34px;
   display: flex;
   flex-direction: column;
 
@@ -470,7 +470,7 @@
 }
 
 .subscription__btn {
-  padding: 24px;
+  padding: 25px 24px;
   width: 205px;
   text-align: center;
   border: 2px solid $color-basic;
