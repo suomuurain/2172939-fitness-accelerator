@@ -177,6 +177,7 @@
   margin: auto 0 0 0;
   padding: 0 0 9px 0;
   align-self: flex-start;
+  transition: $trans-default;
 
   color: $color-white;
   font-family: $ff-roboto;
@@ -228,6 +229,7 @@
 
   &:disabled {
     opacity: 0.5;
+    pointer-events: none;
   }
 }
 
@@ -323,6 +325,7 @@
   padding: 0 0 9px 0;
   align-self: start;
   position: relative;
+  transition: $trans-default;
 
   color: $btn-border;
   font-family: $ff-roboto;
@@ -374,5 +377,6 @@
 
   &:disabled {
     opacity: 0.5;
+    pointer-events: none;
   }
 }

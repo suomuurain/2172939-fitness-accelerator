@@ -211,6 +211,7 @@
   border-radius: 50%;
   border: none;
   background: none url("../img/svg/video-play.svg") no-repeat;
+  transition: $trans-default;
 
   @include hover-focus {
     background: none url("../img/svg/video-play-hover-focus.svg") no-repeat;
@@ -222,6 +223,7 @@
 
   &:disabled {
     background: none url("../img/svg/video-play-disabled.svg") no-repeat;
+    pointer-events: none;
   }
 
   @include vp-1365 {
@@ -239,6 +241,7 @@
 
     &:disabled {
       background: none url("../img/svg/video-play-disabled-tablet.svg") no-repeat;
+      pointer-events: none;
     }
   }
 }

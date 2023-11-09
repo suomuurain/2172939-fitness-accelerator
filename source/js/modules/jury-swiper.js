@@ -18,7 +18,7 @@ const swiperJury = new Swiper('.jury__swiper', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.jury__swiper-button--next',
-    prevEl: '.jury__swiper-button--prev',
+    nextEl: '.jury__swiper-btn--next',
+    prevEl: '.jury__swiper-btn--prev',
   },
 });

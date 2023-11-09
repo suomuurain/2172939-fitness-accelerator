@@ -5,7 +5,7 @@ const swiperReviews = new Swiper('.reviews__swiper', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.reviews__swiper-button--next',
-    prevEl: '.reviews__swiper-button--prev',
+    nextEl: '.reviews__swiper-btn--next',
+    prevEl: '.reviews__swiper-btn--prev',
   },
 });

@@ -100,6 +100,7 @@
   color: $color-white;
   background-color: transparent;
   font-family: $ff-roboto;
+  transition: $trans-default;
 
   @include vp-767 {
     padding: 8px 0;
@@ -120,6 +121,7 @@
 
   &:disabled {
     opacity: 0.4;
+    pointer-events: none;
   }
 
   &::placeholder {
@@ -161,6 +163,7 @@
   background-color: transparent;
   border: 2px solid $color-white;
   cursor: pointer;
+  transition: $trans-default;
 
   font-family: $ff-roboto;
   font-size: 12px;
@@ -193,6 +196,7 @@
     color: $color-additional-blue;
     background-color: $color-white;
     outline: none;
+    transition: $trans-default;
   }
 
   &:active {
@@ -202,5 +206,6 @@
   &:disabled {
     color: $color-white-opacity-50;
     border: 2px solid $color-white-opacity-50;
+    pointer-events: none;
   }
 }

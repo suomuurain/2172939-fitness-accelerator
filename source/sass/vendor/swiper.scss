@@ -206,6 +206,7 @@
   border-radius: 50%;
   width: 56px;
   height: 56px;
+  transition: 0.3s ease;
 
   @media (max-width: 767px) {
     width: 32px;
@@ -242,6 +243,7 @@
   color: #102654;
   width: 16px;
   height: 32px;
+  transition: 0.3s ease;
 
   @media (max-width: 767px) {
     font-size: 19px;
@@ -256,6 +258,7 @@
 .swiper-button-prev:focus,
 .swiper-button-prev:hover {
   border: 1px solid #102654;
+  outline: none;
 }
 
 .swiper-button-next:active,

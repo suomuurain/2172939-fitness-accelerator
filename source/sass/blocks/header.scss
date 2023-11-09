@@ -43,6 +43,7 @@
   font-weight: 600;
   color: $color-white;
   letter-spacing: 0.03rem;
+  transition: $trans-default;
 
   &:hover,
   &:focus {
@@ -57,6 +58,7 @@
 
   &:disabled {
     color: $color-white-opacity-50;
+    pointer-events: none;
   }
 
   @include vp-1365 {

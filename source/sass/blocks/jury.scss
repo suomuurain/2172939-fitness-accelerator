@@ -81,9 +81,10 @@
   }
 }
 
-.jury__swiper-button {
+.jury__swiper-btn {
   color: $color-basic;
   top: 58%;
+  transition: $trans-default;
 
   &--prev {
     left: calc((100% - 1160px) / 2 - 76px);

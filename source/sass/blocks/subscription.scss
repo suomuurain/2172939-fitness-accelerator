@@ -20,6 +20,14 @@
     background-image: url("../img/plates-desktop.png");
   }
 
+  // @include retina {
+  //   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  //     width: 321px;
+  //     height: 384px;
+  //     background-repeat: no-repeat;
+  //     background-image: url("../img/plates-desktop@2x.png");
+  //   }
+  // }
 
   @include vp-1365 {
     padding: 100px 0 100px;
@@ -129,6 +137,7 @@
 
   background-color: transparent;
   border: none;
+  transition: $trans-default;
 
   @include vp-1365 {
     font-size: 18px;
@@ -147,6 +156,8 @@
 
   @include hover-focus {
     color: $color-basic;
+    transition: $trans-default;
+    outline: none;
 
     &::after {
       position: absolute;
@@ -176,6 +187,7 @@
 
   @include active {
     color: $color-basic;
+    transition: $trans-default;
 
     &::after {
       position: absolute;
@@ -185,6 +197,7 @@
       width: calc(100% - 12px);
       height: 2px;
       background-color: $btn-tab;
+      transition: $trans-default;
     }
 
     @include vp-1365 {
@@ -216,6 +229,7 @@
 
 .subscription__control.is-active {
   color: $color-basic;
+  transition: $trans-default;
 
   &::after {
     position: absolute;
@@ -280,6 +294,7 @@
 
   background-color: $color-white;
   z-index: 2;
+  transition: $trans-default;
 
   &:hover {
     padding: 60px 70px 58px;
@@ -469,11 +484,12 @@
   }
 }
 
-.subscription__btn {
+.subscription__element-wrapper a {
   padding: 25px 24px;
   width: 205px;
   text-align: center;
   border: 2px solid $color-basic;
+  transition: $trans-default;
 
   color: $color-basic;
   font-family: $ff-roboto;
@@ -501,6 +517,7 @@
     background: $btn-gradient;
     border: none;
     outline: none;
+    transition: $trans-default;
   }
 
   &:active {
@@ -511,5 +528,6 @@
   &:disabled {
     background: $color-basic;
     opacity: 0.3;
+    pointer-events: none;
   }
 }

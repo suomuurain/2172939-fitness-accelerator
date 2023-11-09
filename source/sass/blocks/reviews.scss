@@ -151,9 +151,10 @@
   }
 }
 
-.reviews__swiper-button {
+.reviews__swiper-btn {
   color: $color-basic;
   top: 62%;
+  transition: $trans-default;
 
   &--prev {
     left: calc((100% - 560px) / 2 - 76px);

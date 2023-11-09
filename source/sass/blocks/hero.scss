@@ -154,6 +154,7 @@
   color: $color-white;
   background-color: transparent;
   border: 2px solid $color-white;
+  transition: $trans-default;
   grid-column: 1/2;
 
   font-family: $ff-roboto;
@@ -178,6 +179,7 @@
   &:disabled {
     color: $color-white-opacity-50;
     border: 2px solid $color-white-opacity-50;
+    pointer-events: none;
   }
 
   @include vp-1365 {

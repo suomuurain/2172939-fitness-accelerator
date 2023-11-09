@@ -97,6 +97,7 @@
   margin: 0;
   padding: 0;
   color: $color-basic;
+  transition: $trans-default;
 
   font-family: $ff-roboto;
   font-size: 14px;
@@ -115,6 +116,7 @@
   &:active {
     color: $color-basic;
     opacity: 0.8;
+    transition: $trans-default;
 
     &::after {
       position: absolute;
@@ -125,6 +127,7 @@
       height: 1px;
       background-color: $color-basic;
       opacity: 0.8;
+      transition: $trans-default;
     }
   }
 
@@ -135,6 +138,7 @@
 
   &:disabled {
     opacity: 0.3;
+    pointer-events: none;
 
     &::after {
       position: absolute;
