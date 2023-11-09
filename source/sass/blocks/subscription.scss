@@ -308,7 +308,7 @@
     width: 442px;
 
     &:hover,
-    &:focus-visible {
+    &:focus {
       padding: 61px 100px 58px;
       border: 7px solid;
       border-image: $subscription-gradient;
@@ -321,7 +321,7 @@
     width: 100%;
 
     &:hover,
-    &:focus-visible {
+    &:focus {
       padding: 45px 35px 43px;
     }
   }
@@ -511,7 +511,7 @@
   }
 
   &:hover,
-  &:focus-visible {
+  &:focus {
     padding: 26px;
     color: $color-white;
     background: $btn-gradient;

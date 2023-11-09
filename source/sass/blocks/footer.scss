@@ -81,7 +81,7 @@
     }
   }
 
-  &:focus-visible {
+  &:focus {
     outline: 1px solid $color-white;
     outline-offset: 10px;
   }
@@ -130,7 +130,7 @@
   transition: $trans-default;
 
   &:hover,
-  &:focus-visible {
+  &:focus {
     background-color: $color-additional-blue;
     fill: $color-white;
     outline: none;

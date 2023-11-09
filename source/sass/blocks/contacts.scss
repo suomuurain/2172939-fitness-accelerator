@@ -112,8 +112,7 @@
     line-height: 20px; /* 142.857% */
   }
 
-  &:hover,
-  &:active {
+  @include hover {
     color: $color-basic;
     opacity: 0.8;
     transition: $trans-default;
@@ -131,7 +130,25 @@
     }
   }
 
-  &:focus-visible {
+  @include active {
+    color: $color-basic;
+    opacity: 0.8;
+    transition: $trans-default;
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: -5px;
+      width: 100%;
+      height: 1px;
+      background-color: $color-basic;
+      opacity: 0.8;
+      transition: $trans-default;
+    }
+  }
+
+  @include focus {
     outline: 1px solid $color-basic;
     outline-offset: 10px;
   }
