@@ -871,18 +871,22 @@
 
         <section class="main__contact-form contact-form">
           <div class="contact-form__free-visit free-visit">
-            <div class="free-visit__wrapper">
+            <div class="free-visit__wrapper" data-form-validate="data-form-validate" data-callback="base">
               <h2>Бесплатное занятие</h2>
               <form action="https://echo.htmlacademy.ru/" method="get">
                 <div class="free-visit__form-wrapper">
-                  <label for="name">
-                    <span class="visually-hidden">Поле ввода имени.</span>
-                    <input type="text" placeholder="Имя" name="name" id="name" required autocomplete="off">
-                  </label>
-                  <label for="phone-number">
-                    <span class="visually-hidden">Поле ввода номера телефона.</span>
-                    <input type="tel" placeholder="Телефон" name="phone-number" id="phone-number" required autocomplete="off">
-                  </label>
+                  <div class="free-visit__form-name" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
+                    <label for="name">
+                      <span class="visually-hidden">Поле ввода имени.</span>
+                      <input type="text" placeholder="Имя" name="name" id="name" required autocomplete="off" minlength="1">
+                    </label>
+                  </div>
+                  <div class="free-visit__phone-number" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required="data-required">
+                    <label for="phone-number">
+                      <span class="visually-hidden">Поле ввода номера телефона.</span>
+                      <input type="tel" placeholder="Телефон" name="phone-number" id="phone-number" required autocomplete="off">
+                    </label>
+                  </div>
                 </div>
                 <button class="free-visit__btn btn" type="submit">Отправить</button>
               </form>

@@ -78,7 +78,8 @@
   }
 }
 
-.free-visit__form-wrapper label {
+.free-visit__form-name,
+.free-visit__phone-number {
   width: calc(50% - 15px);
 
   @include vp-1365 {
@@ -152,6 +153,27 @@
       font-weight: 300;
       line-height: 22px; /* 157.143% */
     }
+  }
+}
+
+[data-validate-type].is-invalid input[type="text"],
+[data-validate-type].is-invalid input[type="tel"] {
+  border-bottom: 1px solid $color-error;
+}
+
+.free-visit__form-wrapper .input-message {
+  font-family: $ff-roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+
+  &.is-invalid {
+    color: $color-error;
+  }
+
+  &.is-valid {
+    color: $color-white;
   }
 }
 
