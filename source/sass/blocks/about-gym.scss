@@ -133,11 +133,11 @@
     font-weight: 300;
     line-height: 22px; /* 157.143% */
   }
-}
 
-.about-gym__info p:not(:first-of-type) {
-  @include vp-1365 {
-    display: none;
+  &:not(:first-of-type) {
+    @include vp-1365 {
+      display: none;
+    }
   }
 }
 
