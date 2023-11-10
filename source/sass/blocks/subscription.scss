@@ -17,17 +17,26 @@
     background-repeat: no-repeat;
     background-position: right;
     z-index: 0;
-    background-image: url("../img/plates-desktop.png");
+    background-image: image-set(
+      url("../img/plates-desktop.png") type("image/png"),
+      url("../img/plates-desktop.webp") type("image/webp")
+    );
   }
 
-  // @include retina {
-  //   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  //     width: 321px;
-  //     height: 384px;
-  //     background-repeat: no-repeat;
-  //     background-image: url("../img/plates-desktop@2x.png");
-  //   }
-  // }
+  @include retina {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      &::after {
+        width: 287px;
+        height: 384px;
+        background-repeat: no-repeat;
+        background-image: image-set(
+          url("../img/plates-desktop@2x.png") type("image/png"),
+          url("../img/plates-desktop@2x.webp") type("image/webp")
+        );
+        background-size: cover;
+      }
+    }
+  }
 
   @include vp-1365 {
     padding: 100px 0 100px;
@@ -35,8 +44,27 @@
     &::after {
       width: 327px;
       height: 423px;
-      bottom: -148px;
-      background-image: url("../img/plates-tablet.png");
+      bottom: -150px;
+      background-image: image-set(
+        url("../img/plates-tablet.png") type("image/png"),
+        url("../img/plates-tablet.webp") type("image/webp")
+      );
+    }
+
+    @include retina {
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        &::after {
+          width: 327px;
+          height: 384px;
+          bottom: -128px;
+          background-repeat: no-repeat;
+          background-image: image-set(
+            url("../img/plates-tablet@2x.png") type("image/png"),
+            url("../img/plates-tablet@2x.webp") type("image/webp")
+          );
+          background-size: cover;
+        }
+      }
     }
   }
 
@@ -46,6 +74,15 @@
     &::after {
       content: none;
       background: none;
+    }
+
+    @include retina {
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        &::after {
+          content: none;
+          background: none;
+        }
+      }
     }
   }
 }
