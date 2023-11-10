@@ -24,7 +24,24 @@
   }
 }
 
+.footer__logo-link {
+  &:focus {
+    outline: none;
+  }
+
+  &:hover img,
+  &:focus img {
+    opacity: 0.8;
+    outline: none;
+  }
+
+  &:active img {
+    opacity: 0.5;
+  }
+}
+
 .footer__logo-link img {
+
   @include vp-767 {
     display: block;
     margin: 0 0 26px;
