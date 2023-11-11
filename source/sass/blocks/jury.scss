@@ -147,11 +147,13 @@
   }
 }
 
-.jury__slide:hover p {
+.jury__slide:hover p,
+.jury__slide:focus p {
   display: none;
 }
 
-.jury__slide:hover .jury__info {
+.jury__slide:hover .jury__info,
+.jury__slide:focus .jury__info {
   visibility: visible;
 }
 
