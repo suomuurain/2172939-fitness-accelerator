@@ -36,6 +36,11 @@
     opacity: 0.5;
   }
 
+  &:disabled,
+  &--disabled {
+    opacity: 0.2;
+  }
+
   @include vp-1365 {
     padding: 10px 0;
   }
@@ -70,7 +75,8 @@
     border-bottom: 1px solid $color-basic;
   }
 
-  &:disabled {
+  &:disabled,
+  &--disabled {
     color: $color-white-opacity-50;
     pointer-events: none;
   }

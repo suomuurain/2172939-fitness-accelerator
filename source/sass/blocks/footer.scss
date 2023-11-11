@@ -38,6 +38,11 @@
   &:active img {
     opacity: 0.5;
   }
+
+  &:disabled img,
+  &--disabled img {
+    opacity: 0.2;
+  }
 }
 
 .footer__logo-link img {
@@ -113,7 +118,8 @@
     }
   }
 
-  &:disabled {
+  &:disabled,
+  &--disabled {
     color: $color-white-opacity-50;
     pointer-events: none;
   }
@@ -167,7 +173,8 @@
     outline: none;
   }
 
-  &:disabled {
+  &:disabled,
+  &--disabled {
     background-color: $color-white;
     opacity: 0.3;
     fill: $color-default-black;

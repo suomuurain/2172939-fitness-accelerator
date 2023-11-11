@@ -176,7 +176,8 @@
     color: $color-basic;
   }
 
-  &:disabled {
+  &:disabled,
+  &--disabled {
     color: $color-white-opacity-50;
     border: 2px solid $color-white-opacity-50;
     pointer-events: none;

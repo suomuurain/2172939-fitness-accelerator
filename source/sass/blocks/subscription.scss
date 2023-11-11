@@ -562,7 +562,8 @@
     color: $color-white-opacity-70;
   }
 
-  &:disabled {
+  &:disabled,
+  &--disabled {
     background: $color-basic;
     opacity: 0.3;
     pointer-events: none;
