@@ -98,12 +98,14 @@
 
     @include vp-767 {
       border-bottom: none;
+      padding: 0 62px 0;
     }
   }
 
   &:last-child {
     @include vp-767 {
       margin: -5px 0 0;
+      padding: 0;
     }
   }
 
