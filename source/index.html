@@ -77,16 +77,16 @@
                   <img src="./img/gym-desktop.jpg" srcset="./img/gym-desktop.jpg 1x, ./img/gym-desktop@2x.jpg 2x" width="660" height="401" alt="Тренажерный зал.">
                 </picture>
                 <div class="about-gym__video-wrapper">
-                  <video src="./img/video-html-academy.mp4"
-                    preload="auto"
-                    poster="./img/poster-video-blue.jpg"
-                    controls
-                    width="364" height="228"
-                    aria-label="Видео фитнес-центра SUPERGYM.">
-                  </video>
-                  <button type="button">
-                    <span class="visually-hidden">Кнопка Воспроизвести видео.</span>
-                  </button>
+                  <div class="about-gym__video video">
+                    <a class="video__link" href="https://youtu.be/9TZXsZItgdw">
+                      <picture>
+                        <source srcset="https://i.ytimg.com/vi_webp/9TZXsZItgdw/maxresdefault.webp" type="image/webp">
+                        <img class="video__media" src="https://i.ytimg.com/vi/9TZXsZItgdw/maxresdefault.jpg" alt="Видео фитнес-центра SUPERGYM.">
+                      </picture>
+                      <div class="video__poster" aria-label="Постер к видео."></div>
+                    </a>
+                    <button class="video__button" aria-label="Запустить видео."></button>
+                  </div>
                 </div>
               </div>
             </div>

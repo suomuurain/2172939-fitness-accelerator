@@ -4,6 +4,7 @@ import {initTabs} from './vendor/tabs/init-tabs';
 import {initAccordions} from './vendor/accordions/init-accordion';
 import './modules/jury-swiper';
 import './modules/reviews-swiper';
+import {findVideos} from './modules/video';
 
 // ---------------------------------
 
@@ -23,6 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    findVideos();
     initTabs();
     initAccordions();
   });
