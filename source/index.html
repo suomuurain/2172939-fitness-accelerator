@@ -21,11 +21,11 @@
       <header class="header">
         <div class="container">
           <div class="header__wrapper">
-            <a href="index.html" class="header__logo-link" aria-label="Лого фитнес-центра SUPERGYM.">
+            <a href="index.html" class="header__logo-link">
               <picture>
                 <source media="(max-width: 767px)" srcset="./img/sprite/supergym-mobile.svg" width="101" height="17">
                 <source media="(max-width: 1365px)" srcset="./img/sprite/supergym-tablet.svg" width="110" height="19">
-                <img src="./img/sprite/supergym-desktop.svg" alt="" width="119" height="20">
+                <img src="./img/sprite/supergym-desktop.svg" alt="Лого фитнес-центра SUPERGYM." width="119" height="20">
               </picture>
             </a>
             <a class="header__phone-link" href="tel:88005555555">8-800-555-55-55</a>
@@ -81,9 +81,11 @@
                     <a class="video__link" href="https://youtu.be/9TZXsZItgdw">
                       <picture>
                         <source srcset="https://i.ytimg.com/vi_webp/9TZXsZItgdw/maxresdefault.webp" type="image/webp">
-                        <img class="video__media" src="https://i.ytimg.com/vi/9TZXsZItgdw/maxresdefault.jpg" alt="Видео фитнес-центра SUPERGYM.">
+                        <img class="video__media" src="https://i.ytimg.com/vi/9TZXsZItgdw/maxresdefault.jpg"  width="364" height="228" alt="Видео фитнес-центра SUPERGYM.">
                       </picture>
-                      <div class="video__poster" aria-label="Постер к видео."></div>
+                      <div class="video__poster">
+                        <span class="visually-hidden">Постер к видео.</span>
+                      </div>
                     </a>
                     <button class="video__button" aria-label="Запустить видео."></button>
                   </div>
@@ -426,7 +428,7 @@
         </section>
 
         <section class="main__advantages advantages">
-          <div class="container--additional">
+          <div class="container container--additional">
             <div class="advantages__wrapper">
               <h2>Наши преимущества</h2>
               <ul class="advantages__list">
@@ -467,7 +469,7 @@
                   </div>
                   <div class="advantages__info advantages__info--add">
                     <h3>Комфорт</h3>
-                    <p>Просторные раздевалки, <br>душевые, фен, Wi-Fi, кулеры</p>
+                    <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
                   </div>
                 </li>
                 <li class="advantages__item">
@@ -535,7 +537,7 @@
                 <div class="faq__content" data-tabs="content">
                   <div class="faq__element" data-tabs="element">
                     <div class="faq__accordion accordion" data-accordion="parent" >
-                      <div class="accordion__element" data-accordion="element">
+                      <div class="accordion__element is-active" data-accordion="element">
                         <h3 data-accordion="button">Как стать членом фитнес&#8209;центра?</h3>
                         <button class="accordion__btn btn" type="button" data-accordion="button">
                           <span class="visually-hidden">Открыть описание.</span>
@@ -927,11 +929,11 @@
         <div class="container">
           <div class="footer__wrapper">
             <h2 class="visually-hidden">Дополнительная информация.</h2>
-            <a class="footer__logo-link" href="index.html" aria-label="Лого фитнес-центра SUPERGYM.">
+            <a class="footer__logo-link" href="index.html">
               <picture>
                 <source media="(max-width: 767px)" srcset="./img/sprite/supergym-mobile-footer.svg" width="90" height="16">
                 <source media="(max-width: 1365px)" srcset="./img/sprite/supergym-tablet-footer.svg" width="99" height="17">
-                <img src="./img/sprite/supergym-desktop-footer.svg" alt="" width="106" height="19">
+                <img src="./img/sprite/supergym-desktop-footer.svg" alt="Лого фитнес-центра SUPERGYM." width="106" height="19">
               </picture>
             </a>
             <ul class="footer__navigation-list" aria-label="Навигация.">
