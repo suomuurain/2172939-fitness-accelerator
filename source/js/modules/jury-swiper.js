@@ -5,6 +5,7 @@ const swiperJury = new Swiper('.jury__swiper', {
   breakpoints: {
     320: {
       slidesPerView: 1,
+      initialSlide: 2,
     },
     768: {
       slidesPerView: 2,
@@ -14,6 +15,7 @@ const swiperJury = new Swiper('.jury__swiper', {
     1366: {
       slidesPerView: 4,
       spaceBetween: 40,
+      initialSlide: 0,
     },
   },
 
