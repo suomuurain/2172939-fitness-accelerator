@@ -9,6 +9,7 @@ const swiperJury = new Swiper('.jury__swiper', {
     768: {
       slidesPerView: 2,
       spaceBetween: 32,
+      initialSlide: 2,
     },
     1366: {
       slidesPerView: 4,
