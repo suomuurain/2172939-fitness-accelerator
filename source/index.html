@@ -34,7 +34,7 @@
       </header>
 
       <main class="main">
-        <section class="main__hero hero">
+        <section class="main__hero hero" data-test="hero">
           <div class="container">
             <div class="hero__wrapper">
               <h1 class="visually-hidden">Фитнес-центр SUPERGYM в Омске.</h1>
@@ -58,7 +58,7 @@
           </div>
         </section>
 
-        <section class="main__about-gym about-gym">
+        <section class="main__about-gym about-gym" data-test="about">
           <div class="container">
             <div class="about-gym__wrapper">
               <div class="about-gym__info">
@@ -95,7 +95,7 @@
           </div>
         </section>
 
-        <section class="main__subscription subscription" id="subscription">
+        <section class="main__subscription subscription" id="subscription" data-test="price">
           <div class="container">
             <div class="subscription__wrapper">
               <h2>Абонементы</h2>
@@ -199,235 +199,237 @@
           </div>
         </section>
 
-        <section class="main__games games">
-          <div class="container">
-            <div class="games__wrapper">
-              <h2 class="visually-hidden">Соревнования.</h2>
-              <div class="games__inner-wrapper">
-                <div class="games__info">
-                  <b>SUPER GAMES</b>
-                  <div class="games__details-wrapper">
-                    <div class="games__detail">
-                      <p>Дата</p>
-                      <div class="games__time">
-                        <span>7</span>
-                        <p>Марта 2019</p>
+        <div data-test="games">
+          <section class="main__games games">
+            <div class="container">
+              <div class="games__wrapper">
+                <h2 class="visually-hidden">Соревнования.</h2>
+                <div class="games__inner-wrapper">
+                  <div class="games__info">
+                    <b>SUPER GAMES</b>
+                    <div class="games__details-wrapper">
+                      <div class="games__detail">
+                        <p>Дата</p>
+                        <div class="games__time">
+                          <span>7</span>
+                          <p>Марта 2019</p>
+                        </div>
+                      </div>
+                      <div class="games__detail">
+                        <p>Время</p>
+                        <div class="games__time">
+                          <span>12:00</span>
+                        </div>
                       </div>
                     </div>
-                    <div class="games__detail">
-                      <p>Время</p>
-                      <div class="games__time">
-                        <span>12:00</span>
+                  </div>
+                  <p>Ежегодные соревнования по&nbsp;CrossFit</p>
+                  <a href="#">Заполнить заявку</a>
+                </div>
+                <picture>
+                  <source media="(max-width: 767px)" type="image/webp" srcset="./img/games-mobile.webp 1x, ./img/games-mobile@2x.webp 2x" width="290" height="292">
+                  <source media="(max-width: 1365px)" type="image/webp" srcset="./img/games-tablet.webp 1x, ./img/games-tablet@2x.webp 2x" width="386" height="324">
+                  <source media="(min-width: 1366px)" type="image/webp" srcset="./img/games-desktop.webp 1x, ./img/games-desktop@2x.webp 2x" width="660" height="500">
+                  <source media="(max-width: 767px)" srcset="./img/games-mobile.jpg 1x, ./img/games-mobile@2x.jpg 2x" width="290" height="292">
+                  <source media="(max-width: 1365px)" srcset="./img/games-tablet.jpg 1x, ./img/games-tablet@2x.jpg 2x" width="386" height="324">
+                  <img src="./img/games-desktop.jpg" srcset="./img/games-desktop.jpg 1x, ./img/games-desktop@2x.jpg 2x" width="660" height="500" alt="Плавец в воде.">
+                </picture>
+              </div>
+            </div>
+          </section>
+
+          <section class="main__jury jury" id="jury">
+            <div class="container">
+              <div class="jury__wrapper">
+                <h2>Жюри</h2>
+                <!-- Slider main container -->
+                <div class="jury__swiper swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="jury__swiper-wrapper swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="jury__slide swiper-slide" tabindex="0">
+                      <picture>
+                        <source media="(max-width: 767px)" type="image/webp" srcset="./img/jury-1.webp 1x, ./img/jury-1@2x.webp 2x" width="226" height="274">
+                        <source media="(max-width: 1365px)" type="image/webp" srcset="./img/jury-1.webp 1x, ./img/jury-1@2x.webp 2x" width="268" height="294">
+                        <source media="(min-width: 1366px)" type="image/webp" srcset="./img/jury-1.webp 1x, ./img/jury-1@2x.webp 2x" width="260" height="294">
+                        <source media="(max-width: 767px)" srcset="./img/jury-1.jpg 1x, ./img/jury-1@2x.jpg 2x" width="226" height="274">
+                        <source media="(max-width: 1365px)" srcset="./img/jury-1.jpg 1x, ./img/jury-1@2x.jpg 2x" width="268" height="294">
+                        <img src="./img/jury-1.jpg" srcset="./img/jury-1.jpg 1x, ./img/jury-1@2x.jpg 2x" alt="Фото Анна Павлова - жюри SUPERGYM." width="260" height="294">
+                      </picture>
+                      <p>Анна Павлова</p>
+                      <div class="jury__info">
+                        <div>Анна Павлова</div>
+                        <span>CrossFit</span>
+                        <ul class="jury__description">
+                          <li>Certified Level 3 Trainer</li>
+                          <li>Победитель чемпионата России по CrossFit</li>
+                          <li>Опыт — 6 лет</li>
+                        </ul>
                       </div>
                     </div>
+
+                    <div class="jury__slide swiper-slide" tabindex="0">
+                      <picture>
+                        <source media="(max-width: 767px)" type="image/webp" srcset="./img/jury-2.webp 1x, ./img/jury-2@2x.webp 2x" width="226" height="274">
+                        <source media="(max-width: 1365px)" type="image/webp" srcset="./img/jury-2.webp 1x, ./img/jury-2@2x.webp 2x" width="268" height="294">
+                        <source media="(min-width: 1366px)" type="image/webp" srcset="./img/jury-2.webp 1x, ./img/jury-2@2x.webp 2x" width="260" height="294">
+                        <source media="(max-width: 767px)" srcset="./img/jury-2.jpg 1x, ./img/jury-2@2x.jpg 2x" width="226" height="274">
+                        <source media="(max-width: 1365px)" srcset="./img/jury-2.jpg 1x, ./img/jury-2@2x.jpg 2x" width="268" height="294">
+                        <img src="./img/jury-2.jpg" srcset="./img/jury-2.jpg 1x, ./img/jury-2@2x.jpg 2x" alt="Фото Алексей Лавров - жюри SUPERGYM." width="260" height="294">
+                      </picture>
+                      <p>Алексей Лавров</p>
+                      <div class="jury__info">
+                        <div>Алексей Лавров</div>
+                        <span>CrossFit</span>
+                        <ul class="jury__description">
+                          <li>Certified Level 3 Trainer</li>
+                          <li>Победитель чемпионата России по CrossFit</li>
+                          <li>Опыт — 6 лет</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="jury__slide swiper-slide" tabindex="0">
+                      <picture>
+                        <source media="(max-width: 767px)" type="image/webp" srcset="./img/jury-3.webp 1x, ./img/jury-3@2x.webp 2x" width="226" height="274">
+                        <source media="(max-width: 1365px)" type="image/webp" srcset="./img/jury-3.webp 1x, ./img/jury-3@2x.webp 2x" width="268" height="294">
+                        <source media="(min-width: 1366px)" type="image/webp" srcset="./img/jury-3.webp 1x, ./img/jury-3@2x.webp 2x" width="260" height="294">
+                        <source media="(max-width: 767px)" srcset="./img/jury-3.jpg 1x, ./img/jury-3@2x.jpg 2x" width="226" height="274">
+                        <source media="(max-width: 1365px)" srcset="./img/jury-3.jpg 1x, ./img/jury-3@2x.jpg 2x" width="268" height="294">
+                        <img src="./img/jury-3.jpg" srcset="./img/jury-3.jpg 1x, ./img/jury-3@2x.jpg 2x" alt="Фото Александр Пашков - жюри SUPERGYM." width="260" height="294">
+                      </picture>
+                      <p>Александр Пашков</p>
+                      <div class="jury__info">
+                        <div>Александр Пашков</div>
+                        <span>CrossFit</span>
+                        <ul class="jury__description">
+                          <li>Certified Level 3 Trainer</li>
+                          <li>Победитель чемпионата России по CrossFit</li>
+                          <li>Опыт — 6 лет</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="jury__slide swiper-slide" tabindex="0">
+                      <picture>
+                        <source media="(max-width: 767px)" type="image/webp" srcset="./img/jury-4.webp 1x, ./img/jury-4@2x.webp 2x" width="226" height="274">
+                        <source media="(max-width: 1365px)" type="image/webp" srcset="./img/jury-4.webp 1x, ./img/jury-4@2x.webp 2x" width="268" height="294">
+                        <source media="(min-width: 1366px)" type="image/webp" srcset="./img/jury-4.webp 1x, ./img/jury-4@2x.webp 2x" width="260" height="294">
+                        <source media="(max-width: 767px)" srcset="./img/jury-4.jpg 1x, ./img/jury-4@2x.jpg 2x" width="226" height="274">
+                        <source media="(max-width: 1365px)" srcset="./img/jury-4.jpg 1x, ./img/jury-4@2x.jpg 2x" width="268" height="294">
+                        <img src="./img/jury-4.jpg" srcset="./img/jury-4.jpg 1x, ./img/jury-4@2x.jpg 2x" alt="Фото Мария Кетова - жюри SUPERGYM." width="260" height="294">
+                      </picture>
+                      <p>Мария Кетова</p>
+                      <div class="jury__info">
+                        <div>Мария Кетова</div>
+                        <span>CrossFit</span>
+                        <ul class="jury__description">
+                          <li>Certified Level 3 Trainer</li>
+                          <li>Победитель чемпионата России по CrossFit</li>
+                          <li>Опыт — 6 лет</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="jury__slide swiper-slide" tabindex="0">
+                      <picture>
+                        <source media="(max-width: 767px)" type="image/webp" srcset="./img/jury-1.webp 1x, ./img/jury-1@2x.webp 2x" width="226" height="274">
+                        <source media="(max-width: 1365px)" type="image/webp" srcset="./img/jury-1.webp 1x, ./img/jury-1@2x.webp 2x" width="268" height="294">
+                        <source media="(min-width: 1366px)" type="image/webp" srcset="./img/jury-1.webp 1x, ./img/jury-1@2x.webp 2x" width="260" height="294">
+                        <source media="(max-width: 767px)" srcset="./img/jury-1.jpg 1x, ./img/jury-1@2x.jpg 2x" width="226" height="274">
+                        <source media="(max-width: 1365px)" srcset="./img/jury-1.jpg 1x, ./img/jury-1@2x.jpg 2x" width="268" height="294">
+                        <img src="./img/jury-1.jpg" srcset="./img/jury-1.jpg 1x, ./img/jury-1@2x.jpg 2x" alt="Фото Анна Павлова - жюри SUPERGYM." width="260" height="294">
+                      </picture>
+                      <p>Анна Павлова</p>
+                      <div class="jury__info">
+                        <div>Анна Павлова</div>
+                        <span>CrossFit</span>
+                        <ul class="jury__description">
+                          <li>Certified Level 3 Trainer</li>
+                          <li>Победитель чемпионата России по CrossFit</li>
+                          <li>Опыт — 6 лет</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="jury__slide swiper-slide" tabindex="0">
+                      <picture>
+                        <source media="(max-width: 767px)" type="image/webp" srcset="./img/jury-2.webp 1x, ./img/jury-2@2x.webp 2x" width="226" height="274">
+                        <source media="(max-width: 1365px)" type="image/webp" srcset="./img/jury-2.webp 1x, ./img/jury-2@2x.webp 2x" width="268" height="294">
+                        <source media="(min-width: 1366px)" type="image/webp" srcset="./img/jury-2.webp 1x, ./img/jury-2@2x.webp 2x" width="260" height="294">
+                        <source media="(max-width: 767px)" srcset="./img/jury-2.jpg 1x, ./img/jury-2@2x.jpg 2x" width="226" height="274">
+                        <source media="(max-width: 1365px)" srcset="./img/jury-2.jpg 1x, ./img/jury-2@2x.jpg 2x" width="268" height="294">
+                        <img src="./img/jury-2.jpg" srcset="./img/jury-2.jpg 1x, ./img/jury-2@2x.jpg 2x" alt="Фото Алексей Лавров - жюри SUPERGYM." width="260" height="294">
+                      </picture>
+                      <p>Алексей Лавров</p>
+                      <div class="jury__info">
+                        <div>Алексей Лавров</div>
+                        <span>CrossFit</span>
+                        <ul class="jury__description">
+                          <li>Certified Level 3 Trainer</li>
+                          <li>Победитель чемпионата России по CrossFit</li>
+                          <li>Опыт — 6 лет</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="jury__slide swiper-slide" tabindex="0">
+                      <picture>
+                        <source media="(max-width: 767px)" type="image/webp" srcset="./img/jury-3.webp 1x, ./img/jury-3@2x.webp 2x" width="226" height="274">
+                        <source media="(max-width: 1365px)" type="image/webp" srcset="./img/jury-3.webp 1x, ./img/jury-3@2x.webp 2x" width="268" height="294">
+                        <source media="(min-width: 1366px)" type="image/webp" srcset="./img/jury-3.webp 1x, ./img/jury-3@2x.webp 2x" width="260" height="294">
+                        <source media="(max-width: 767px)" srcset="./img/jury-3.jpg 1x, ./img/jury-3@2x.jpg 2x" width="226" height="274">
+                        <source media="(max-width: 1365px)" srcset="./img/jury-3.jpg 1x, ./img/jury-3@2x.jpg 2x" width="268" height="294">
+                        <img src="./img/jury-3.jpg" srcset="./img/jury-3.jpg 1x, ./img/jury-3@2x.jpg 2x" alt="Фото Александр Пашков - жюри SUPERGYM." width="260" height="294">
+                      </picture>
+                      <p>Александр Пашков</p>
+                      <div class="jury__info">
+                        <div>Александр Пашков</div>
+                        <span>CrossFit</span>
+                        <ul class="jury__description">
+                          <li>Certified Level 3 Trainer</li>
+                          <li>Победитель чемпионата России по CrossFit</li>
+                          <li>Опыт — 6 лет</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="jury__slide swiper-slide" tabindex="0">
+                      <picture>
+                        <source media="(max-width: 767px)" type="image/webp" srcset="./img/jury-4.webp 1x, ./img/jury-4@2x.webp 2x" width="226" height="274">
+                        <source media="(max-width: 1365px)" type="image/webp" srcset="./img/jury-4.webp 1x, ./img/jury-4@2x.webp 2x" width="268" height="294">
+                        <source media="(min-width: 1366px)" type="image/webp" srcset="./img/jury-4.webp 1x, ./img/jury-4@2x.webp 2x" width="260" height="294">
+                        <source media="(max-width: 767px)" srcset="./img/jury-4.jpg 1x, ./img/jury-4@2x.jpg 2x" width="226" height="274">
+                        <source media="(max-width: 1365px)" srcset="./img/jury-4.jpg 1x, ./img/jury-4@2x.jpg 2x" width="268" height="294">
+                        <img src="./img/jury-4.jpg" srcset="./img/jury-4.jpg 1x, ./img/jury-4@2x.jpg 2x" alt="Фото Мария Кетова - жюри SUPERGYM." width="260" height="294">
+                      </picture>
+                      <p>Мария Кетова</p>
+                      <div class="jury__info">
+                        <div>Мария Кетова</div>
+                        <span>CrossFit</span>
+                        <ul class="jury__description">
+                          <li>Certified Level 3 Trainer</li>
+                          <li>Победитель чемпионата России по CrossFit</li>
+                          <li>Опыт — 6 лет</li>
+                        </ul>
+                      </div>
+                    </div>
+
                   </div>
                 </div>
-                <p>Ежегодные соревнования по&nbsp;CrossFit</p>
-                <a href="#">Заполнить заявку</a>
-              </div>
-              <picture>
-                <source media="(max-width: 767px)" type="image/webp" srcset="./img/games-mobile.webp 1x, ./img/games-mobile@2x.webp 2x" width="290" height="292">
-                <source media="(max-width: 1365px)" type="image/webp" srcset="./img/games-tablet.webp 1x, ./img/games-tablet@2x.webp 2x" width="386" height="324">
-                <source media="(min-width: 1366px)" type="image/webp" srcset="./img/games-desktop.webp 1x, ./img/games-desktop@2x.webp 2x" width="660" height="500">
-                <source media="(max-width: 767px)" srcset="./img/games-mobile.jpg 1x, ./img/games-mobile@2x.jpg 2x" width="290" height="292">
-                <source media="(max-width: 1365px)" srcset="./img/games-tablet.jpg 1x, ./img/games-tablet@2x.jpg 2x" width="386" height="324">
-                <img src="./img/games-desktop.jpg" srcset="./img/games-desktop.jpg 1x, ./img/games-desktop@2x.jpg 2x" width="660" height="500" alt="Плавец в воде.">
-              </picture>
-            </div>
-          </div>
-        </section>
-
-        <section class="main__jury jury" id="jury">
-          <div class="container">
-            <div class="jury__wrapper">
-              <h2>Жюри</h2>
-              <!-- Slider main container -->
-              <div class="jury__swiper swiper">
-                <!-- Additional required wrapper -->
-                <div class="jury__swiper-wrapper swiper-wrapper">
-                  <!-- Slides -->
-                  <div class="jury__slide swiper-slide" tabindex="0">
-                    <picture>
-                      <source media="(max-width: 767px)" type="image/webp" srcset="./img/jury-1.webp 1x, ./img/jury-1@2x.webp 2x" width="226" height="274">
-                      <source media="(max-width: 1365px)" type="image/webp" srcset="./img/jury-1.webp 1x, ./img/jury-1@2x.webp 2x" width="268" height="294">
-                      <source media="(min-width: 1366px)" type="image/webp" srcset="./img/jury-1.webp 1x, ./img/jury-1@2x.webp 2x" width="260" height="294">
-                      <source media="(max-width: 767px)" srcset="./img/jury-1.jpg 1x, ./img/jury-1@2x.jpg 2x" width="226" height="274">
-                      <source media="(max-width: 1365px)" srcset="./img/jury-1.jpg 1x, ./img/jury-1@2x.jpg 2x" width="268" height="294">
-                      <img src="./img/jury-1.jpg" srcset="./img/jury-1.jpg 1x, ./img/jury-1@2x.jpg 2x" alt="Фото Анна Павлова - жюри SUPERGYM." width="260" height="294">
-                    </picture>
-                    <p>Анна Павлова</p>
-                    <div class="jury__info">
-                      <div>Анна Павлова</div>
-                      <span>CrossFit</span>
-                      <ul class="jury__description">
-                        <li>Certified Level 3 Trainer</li>
-                        <li>Победитель чемпионата России по CrossFit</li>
-                        <li>Опыт — 6 лет</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="jury__slide swiper-slide" tabindex="0">
-                    <picture>
-                      <source media="(max-width: 767px)" type="image/webp" srcset="./img/jury-2.webp 1x, ./img/jury-2@2x.webp 2x" width="226" height="274">
-                      <source media="(max-width: 1365px)" type="image/webp" srcset="./img/jury-2.webp 1x, ./img/jury-2@2x.webp 2x" width="268" height="294">
-                      <source media="(min-width: 1366px)" type="image/webp" srcset="./img/jury-2.webp 1x, ./img/jury-2@2x.webp 2x" width="260" height="294">
-                      <source media="(max-width: 767px)" srcset="./img/jury-2.jpg 1x, ./img/jury-2@2x.jpg 2x" width="226" height="274">
-                      <source media="(max-width: 1365px)" srcset="./img/jury-2.jpg 1x, ./img/jury-2@2x.jpg 2x" width="268" height="294">
-                      <img src="./img/jury-2.jpg" srcset="./img/jury-2.jpg 1x, ./img/jury-2@2x.jpg 2x" alt="Фото Алексей Лавров - жюри SUPERGYM." width="260" height="294">
-                    </picture>
-                    <p>Алексей Лавров</p>
-                    <div class="jury__info">
-                      <div>Алексей Лавров</div>
-                      <span>CrossFit</span>
-                      <ul class="jury__description">
-                        <li>Certified Level 3 Trainer</li>
-                        <li>Победитель чемпионата России по CrossFit</li>
-                        <li>Опыт — 6 лет</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="jury__slide swiper-slide" tabindex="0">
-                    <picture>
-                      <source media="(max-width: 767px)" type="image/webp" srcset="./img/jury-3.webp 1x, ./img/jury-3@2x.webp 2x" width="226" height="274">
-                      <source media="(max-width: 1365px)" type="image/webp" srcset="./img/jury-3.webp 1x, ./img/jury-3@2x.webp 2x" width="268" height="294">
-                      <source media="(min-width: 1366px)" type="image/webp" srcset="./img/jury-3.webp 1x, ./img/jury-3@2x.webp 2x" width="260" height="294">
-                      <source media="(max-width: 767px)" srcset="./img/jury-3.jpg 1x, ./img/jury-3@2x.jpg 2x" width="226" height="274">
-                      <source media="(max-width: 1365px)" srcset="./img/jury-3.jpg 1x, ./img/jury-3@2x.jpg 2x" width="268" height="294">
-                      <img src="./img/jury-3.jpg" srcset="./img/jury-3.jpg 1x, ./img/jury-3@2x.jpg 2x" alt="Фото Александр Пашков - жюри SUPERGYM." width="260" height="294">
-                    </picture>
-                    <p>Александр Пашков</p>
-                    <div class="jury__info">
-                      <div>Александр Пашков</div>
-                      <span>CrossFit</span>
-                      <ul class="jury__description">
-                        <li>Certified Level 3 Trainer</li>
-                        <li>Победитель чемпионата России по CrossFit</li>
-                        <li>Опыт — 6 лет</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="jury__slide swiper-slide" tabindex="0">
-                    <picture>
-                      <source media="(max-width: 767px)" type="image/webp" srcset="./img/jury-4.webp 1x, ./img/jury-4@2x.webp 2x" width="226" height="274">
-                      <source media="(max-width: 1365px)" type="image/webp" srcset="./img/jury-4.webp 1x, ./img/jury-4@2x.webp 2x" width="268" height="294">
-                      <source media="(min-width: 1366px)" type="image/webp" srcset="./img/jury-4.webp 1x, ./img/jury-4@2x.webp 2x" width="260" height="294">
-                      <source media="(max-width: 767px)" srcset="./img/jury-4.jpg 1x, ./img/jury-4@2x.jpg 2x" width="226" height="274">
-                      <source media="(max-width: 1365px)" srcset="./img/jury-4.jpg 1x, ./img/jury-4@2x.jpg 2x" width="268" height="294">
-                      <img src="./img/jury-4.jpg" srcset="./img/jury-4.jpg 1x, ./img/jury-4@2x.jpg 2x" alt="Фото Мария Кетова - жюри SUPERGYM." width="260" height="294">
-                    </picture>
-                    <p>Мария Кетова</p>
-                    <div class="jury__info">
-                      <div>Мария Кетова</div>
-                      <span>CrossFit</span>
-                      <ul class="jury__description">
-                        <li>Certified Level 3 Trainer</li>
-                        <li>Победитель чемпионата России по CrossFit</li>
-                        <li>Опыт — 6 лет</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="jury__slide swiper-slide" tabindex="0">
-                    <picture>
-                      <source media="(max-width: 767px)" type="image/webp" srcset="./img/jury-1.webp 1x, ./img/jury-1@2x.webp 2x" width="226" height="274">
-                      <source media="(max-width: 1365px)" type="image/webp" srcset="./img/jury-1.webp 1x, ./img/jury-1@2x.webp 2x" width="268" height="294">
-                      <source media="(min-width: 1366px)" type="image/webp" srcset="./img/jury-1.webp 1x, ./img/jury-1@2x.webp 2x" width="260" height="294">
-                      <source media="(max-width: 767px)" srcset="./img/jury-1.jpg 1x, ./img/jury-1@2x.jpg 2x" width="226" height="274">
-                      <source media="(max-width: 1365px)" srcset="./img/jury-1.jpg 1x, ./img/jury-1@2x.jpg 2x" width="268" height="294">
-                      <img src="./img/jury-1.jpg" srcset="./img/jury-1.jpg 1x, ./img/jury-1@2x.jpg 2x" alt="Фото Анна Павлова - жюри SUPERGYM." width="260" height="294">
-                    </picture>
-                    <p>Анна Павлова</p>
-                    <div class="jury__info">
-                      <div>Анна Павлова</div>
-                      <span>CrossFit</span>
-                      <ul class="jury__description">
-                        <li>Certified Level 3 Trainer</li>
-                        <li>Победитель чемпионата России по CrossFit</li>
-                        <li>Опыт — 6 лет</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="jury__slide swiper-slide" tabindex="0">
-                    <picture>
-                      <source media="(max-width: 767px)" type="image/webp" srcset="./img/jury-2.webp 1x, ./img/jury-2@2x.webp 2x" width="226" height="274">
-                      <source media="(max-width: 1365px)" type="image/webp" srcset="./img/jury-2.webp 1x, ./img/jury-2@2x.webp 2x" width="268" height="294">
-                      <source media="(min-width: 1366px)" type="image/webp" srcset="./img/jury-2.webp 1x, ./img/jury-2@2x.webp 2x" width="260" height="294">
-                      <source media="(max-width: 767px)" srcset="./img/jury-2.jpg 1x, ./img/jury-2@2x.jpg 2x" width="226" height="274">
-                      <source media="(max-width: 1365px)" srcset="./img/jury-2.jpg 1x, ./img/jury-2@2x.jpg 2x" width="268" height="294">
-                      <img src="./img/jury-2.jpg" srcset="./img/jury-2.jpg 1x, ./img/jury-2@2x.jpg 2x" alt="Фото Алексей Лавров - жюри SUPERGYM." width="260" height="294">
-                    </picture>
-                    <p>Алексей Лавров</p>
-                    <div class="jury__info">
-                      <div>Алексей Лавров</div>
-                      <span>CrossFit</span>
-                      <ul class="jury__description">
-                        <li>Certified Level 3 Trainer</li>
-                        <li>Победитель чемпионата России по CrossFit</li>
-                        <li>Опыт — 6 лет</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="jury__slide swiper-slide" tabindex="0">
-                    <picture>
-                      <source media="(max-width: 767px)" type="image/webp" srcset="./img/jury-3.webp 1x, ./img/jury-3@2x.webp 2x" width="226" height="274">
-                      <source media="(max-width: 1365px)" type="image/webp" srcset="./img/jury-3.webp 1x, ./img/jury-3@2x.webp 2x" width="268" height="294">
-                      <source media="(min-width: 1366px)" type="image/webp" srcset="./img/jury-3.webp 1x, ./img/jury-3@2x.webp 2x" width="260" height="294">
-                      <source media="(max-width: 767px)" srcset="./img/jury-3.jpg 1x, ./img/jury-3@2x.jpg 2x" width="226" height="274">
-                      <source media="(max-width: 1365px)" srcset="./img/jury-3.jpg 1x, ./img/jury-3@2x.jpg 2x" width="268" height="294">
-                      <img src="./img/jury-3.jpg" srcset="./img/jury-3.jpg 1x, ./img/jury-3@2x.jpg 2x" alt="Фото Александр Пашков - жюри SUPERGYM." width="260" height="294">
-                    </picture>
-                    <p>Александр Пашков</p>
-                    <div class="jury__info">
-                      <div>Александр Пашков</div>
-                      <span>CrossFit</span>
-                      <ul class="jury__description">
-                        <li>Certified Level 3 Trainer</li>
-                        <li>Победитель чемпионата России по CrossFit</li>
-                        <li>Опыт — 6 лет</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="jury__slide swiper-slide" tabindex="0">
-                    <picture>
-                      <source media="(max-width: 767px)" type="image/webp" srcset="./img/jury-4.webp 1x, ./img/jury-4@2x.webp 2x" width="226" height="274">
-                      <source media="(max-width: 1365px)" type="image/webp" srcset="./img/jury-4.webp 1x, ./img/jury-4@2x.webp 2x" width="268" height="294">
-                      <source media="(min-width: 1366px)" type="image/webp" srcset="./img/jury-4.webp 1x, ./img/jury-4@2x.webp 2x" width="260" height="294">
-                      <source media="(max-width: 767px)" srcset="./img/jury-4.jpg 1x, ./img/jury-4@2x.jpg 2x" width="226" height="274">
-                      <source media="(max-width: 1365px)" srcset="./img/jury-4.jpg 1x, ./img/jury-4@2x.jpg 2x" width="268" height="294">
-                      <img src="./img/jury-4.jpg" srcset="./img/jury-4.jpg 1x, ./img/jury-4@2x.jpg 2x" alt="Фото Мария Кетова - жюри SUPERGYM." width="260" height="294">
-                    </picture>
-                    <p>Мария Кетова</p>
-                    <div class="jury__info">
-                      <div>Мария Кетова</div>
-                      <span>CrossFit</span>
-                      <ul class="jury__description">
-                        <li>Certified Level 3 Trainer</li>
-                        <li>Победитель чемпионата России по CrossFit</li>
-                        <li>Опыт — 6 лет</li>
-                      </ul>
-                    </div>
-                  </div>
-
+                <!-- Navigation buttons -->
+                <div class="jury__swiper-btn jury__swiper-btn--prev swiper-button-prev">
+                  <span class="visually-hidden">Нажать для включения предыдущего слайда.</span>
+                </div>
+                <div class="jury__swiper-btn jury__swiper-btn--next swiper-button-next">
+                  <span class="visually-hidden">Нажать для включения следующего слайда.</span>
                 </div>
               </div>
-              <!-- Navigation buttons -->
-              <div class="jury__swiper-btn jury__swiper-btn--prev swiper-button-prev">
-                <span class="visually-hidden">Нажать для включения предыдущего слайда.</span>
-              </div>
-              <div class="jury__swiper-btn jury__swiper-btn--next swiper-button-next">
-                <span class="visually-hidden">Нажать для включения следующего слайда.</span>
-              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
 
-        <section class="main__advantages advantages">
+        <section class="main__advantages advantages" data-test="features">
           <div class="container container--additional">
             <div class="advantages__wrapper">
               <h2>Наши преимущества</h2>
@@ -487,7 +489,7 @@
           </div>
         </section>
 
-        <section class="main__promo promo" id="promo">
+        <section class="main__promo promo" id="promo" data-test="offers">
           <div class="container">
             <div class="promo__wrapper">
               <h2>Акции</h2>
@@ -523,7 +525,7 @@
           </div>
         </section>
 
-        <section class="main__faq faq">
+        <section class="main__faq faq" data-test="faq">
           <div class="container">
             <div class="faq__wrapper">
               <h2>Вопросы и ответы</h2>
@@ -816,116 +818,118 @@
           </div>
         </section>
 
-        <section class="main__reviews reviews">
-          <div class="container">
-            <div class="reviews__wrapper">
-              <h2>Отзывы</h2>
-              <!-- Slider main container -->
-              <div class="reviews__swiper swiper">
-                <!-- Additional required wrapper -->
-                <div class="reviews__swiper-wrapper swiper-wrapper">
-                  <!-- Slides -->
-                  <div class="reviews__slide swiper-slide">
-                    <div class="reviews__slide-wrapper">
-                      <picture>
-                        <source media="(max-width: 767px)" type="image/webp" srcset="./img/review-avatar-mobile.webp 1x, ./img/review-avatar-mobile@2x.webp 2x" width="68" height="68">
-                        <source media="(min-width: 1366px)" type="image/webp" srcset="./img/review-avatar-desktop.webp 1x, ./img/review-avatar-desktop@2x.webp 2x" width="80" height="80">
-                        <source media="(max-width: 767px)" srcset="./img/review-avatar-mobile.png 1x, ./img/review-avatar-mobile@2x.png 2x" width="68" height="68">
-                        <img src="./img/review-avatar-desktop.png" srcset="./img/review-avatar-desktop.png 1x, ./img/review-avatar-desktop@2x.png 2x" alt="Аватарка клиента." width="80" height="80">
-                      </picture>
-                      <span>Анна Орлова</span>
-                      <p>«Хожу в Supergym уже больше года. Нравится,&nbsp;что
-                        в&nbsp;клубе всегда чисто, тренажеры обновляют,
-                        персонал дружелюбный. Зал просторный, даже&nbsp;в
-                        вечернее время нет очередей»
-                      </p>
+        <div data-test="reviews">
+          <section class="main__reviews reviews">
+            <div class="container">
+              <div class="reviews__wrapper">
+                <h2>Отзывы</h2>
+                <!-- Slider main container -->
+                <div class="reviews__swiper swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="reviews__swiper-wrapper swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="reviews__slide swiper-slide">
+                      <div class="reviews__slide-wrapper">
+                        <picture>
+                          <source media="(max-width: 767px)" type="image/webp" srcset="./img/review-avatar-mobile.webp 1x, ./img/review-avatar-mobile@2x.webp 2x" width="68" height="68">
+                          <source media="(min-width: 1366px)" type="image/webp" srcset="./img/review-avatar-desktop.webp 1x, ./img/review-avatar-desktop@2x.webp 2x" width="80" height="80">
+                          <source media="(max-width: 767px)" srcset="./img/review-avatar-mobile.png 1x, ./img/review-avatar-mobile@2x.png 2x" width="68" height="68">
+                          <img src="./img/review-avatar-desktop.png" srcset="./img/review-avatar-desktop.png 1x, ./img/review-avatar-desktop@2x.png 2x" alt="Аватарка клиента." width="80" height="80">
+                        </picture>
+                        <span>Анна Орлова</span>
+                        <p>«Хожу в Supergym уже больше года. Нравится,&nbsp;что
+                          в&nbsp;клубе всегда чисто, тренажеры обновляют,
+                          персонал дружелюбный. Зал просторный, даже&nbsp;в
+                          вечернее время нет очередей»
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="reviews__slide swiper-slide">
+                      <div class="reviews__slide-wrapper">
+                        <picture>
+                          <source media="(max-width: 767px)" type="image/webp" srcset="./img/review-avatar-mobile.webp 1x, ./img/review-avatar-mobile@2x.webp 2x" width="68" height="68">
+                          <source media="(min-width: 1366px)" type="image/webp" srcset="./img/review-avatar-desktop.webp 1x, ./img/review-avatar-desktop@2x.webp 2x" width="80" height="80">
+                          <source media="(max-width: 767px)" srcset="./img/review-avatar-mobile.png 1x, ./img/review-avatar-mobile@2x.png 2x" width="68" height="68">
+                          <img src="./img/review-avatar-desktop.png" srcset="./img/review-avatar-desktop.png 1x, ./img/review-avatar-desktop@2x.png 2x" alt="Аватарка клиента." width="80" height="80">
+                        </picture>
+                        <span>Анна Орлова</span>
+                        <p>«Хожу в Supergym уже больше года. Нравится,&nbsp;что
+                          в клубе всегда чисто, тренажеры обновляют,
+                          персонал дружелюбный. Зал просторный, даже&nbsp;в
+                          вечернее время нет очередей»
+                        </p>
+                      </div>
                     </div>
                   </div>
+                  <!-- Navigation buttons -->
+                </div>
+                <div class="reviews__swiper-btn reviews__swiper-btn--prev swiper-button-prev">
+                  <span class="visually-hidden">Нажать для включения предыдущего слайда.</span>
+                </div>
+                <div class="reviews__swiper-btn reviews__swiper-btn--next swiper-button-next">
+                  <span class="visually-hidden">Нажать для включения следующего слайда.</span>
+                </div>
+              </div>
+            </div>
+          </section>
 
-                  <div class="reviews__slide swiper-slide">
-                    <div class="reviews__slide-wrapper">
-                      <picture>
-                        <source media="(max-width: 767px)" type="image/webp" srcset="./img/review-avatar-mobile.webp 1x, ./img/review-avatar-mobile@2x.webp 2x" width="68" height="68">
-                        <source media="(min-width: 1366px)" type="image/webp" srcset="./img/review-avatar-desktop.webp 1x, ./img/review-avatar-desktop@2x.webp 2x" width="80" height="80">
-                        <source media="(max-width: 767px)" srcset="./img/review-avatar-mobile.png 1x, ./img/review-avatar-mobile@2x.png 2x" width="68" height="68">
-                        <img src="./img/review-avatar-desktop.png" srcset="./img/review-avatar-desktop.png 1x, ./img/review-avatar-desktop@2x.png 2x" alt="Аватарка клиента." width="80" height="80">
-                      </picture>
-                      <span>Анна Орлова</span>
-                      <p>«Хожу в Supergym уже больше года. Нравится,&nbsp;что
-                        в клубе всегда чисто, тренажеры обновляют,
-                        персонал дружелюбный. Зал просторный, даже&nbsp;в
-                        вечернее время нет очередей»
-                      </p>
+          <section class="main__contact-form contact-form">
+            <div class="contact-form__free-visit free-visit">
+              <div class="free-visit__wrapper" data-form-validate="data-form-validate" data-callback="base">
+                <h2>Бесплатное занятие</h2>
+                <form action="https://echo.htmlacademy.ru/" method="get">
+                  <div class="free-visit__form-wrapper">
+                    <div class="free-visit__form-name" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
+                      <label for="name">
+                        <span class="visually-hidden">Поле ввода имени.</span>
+                        <input type="text" placeholder="Имя" name="name" id="name" required autocomplete="off" minlength="1">
+                      </label>
+                    </div>
+                    <div class="free-visit__phone-number" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required="data-required">
+                      <label for="phone-number">
+                        <span class="visually-hidden">Поле ввода номера телефона.</span>
+                        <input type="tel" placeholder="Телефон" name="phone-number" id="phone-number" required autocomplete="off">
+                      </label>
+                    </div>
+                  </div>
+                  <button class="free-visit__btn btn" type="submit">Отправить</button>
+                </form>
+              </div>
+            </div>
+            <div class="contact-form__contacts contacts">
+              <div class="contacts__wrapper">
+                <h2>Контакты</h2>
+                <div class="contacts__content-wrapper">
+                  <div class="contacts__info-wrapper">
+                    <div class="contacts__info">
+                      <h3>Адрес:</h3>
+                      <p>г. Омск, ул. 60 лет Октября, 7</p>
+                    </div>
+                    <div class="contacts__info">
+                      <h3>График работы:</h3>
+                      <p>Пн-Вс: с 8:00 до 22:00</p>
+                    </div>
+                  </div>
+                  <div class="contacts__decoration"></div>
+                  <div class="contacts__info-wrapper">
+                    <div class="contacts__info">
+                      <h3>Телефон:</h3>
+                      <a href="tel:88005555555">8-800-555-55-55</a>
+                    </div>
+                    <div class="contacts__info">
+                      <h3>Email:</h3>
+                      <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
                     </div>
                   </div>
                 </div>
-                <!-- Navigation buttons -->
-              </div>
-              <div class="reviews__swiper-btn reviews__swiper-btn--prev swiper-button-prev">
-                <span class="visually-hidden">Нажать для включения предыдущего слайда.</span>
-              </div>
-              <div class="reviews__swiper-btn reviews__swiper-btn--next swiper-button-next">
-                <span class="visually-hidden">Нажать для включения следующего слайда.</span>
               </div>
             </div>
-          </div>
-        </section>
-
-        <section class="main__contact-form contact-form">
-          <div class="contact-form__free-visit free-visit">
-            <div class="free-visit__wrapper" data-form-validate="data-form-validate" data-callback="base">
-              <h2>Бесплатное занятие</h2>
-              <form action="https://echo.htmlacademy.ru/" method="get">
-                <div class="free-visit__form-wrapper">
-                  <div class="free-visit__form-name" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
-                    <label for="name">
-                      <span class="visually-hidden">Поле ввода имени.</span>
-                      <input type="text" placeholder="Имя" name="name" id="name" required autocomplete="off" minlength="1">
-                    </label>
-                  </div>
-                  <div class="free-visit__phone-number" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required="data-required">
-                    <label for="phone-number">
-                      <span class="visually-hidden">Поле ввода номера телефона.</span>
-                      <input type="tel" placeholder="Телефон" name="phone-number" id="phone-number" required autocomplete="off">
-                    </label>
-                  </div>
-                </div>
-                <button class="free-visit__btn btn" type="submit">Отправить</button>
-              </form>
-            </div>
-          </div>
-          <div class="contact-form__contacts contacts">
-            <div class="contacts__wrapper">
-              <h2>Контакты</h2>
-              <div class="contacts__content-wrapper">
-                <div class="contacts__info-wrapper">
-                  <div class="contacts__info">
-                    <h3>Адрес:</h3>
-                    <p>г. Омск, ул. 60 лет Октября, 7</p>
-                  </div>
-                  <div class="contacts__info">
-                    <h3>График работы:</h3>
-                    <p>Пн-Вс: с 8:00 до 22:00</p>
-                  </div>
-                </div>
-                <div class="contacts__decoration"></div>
-                <div class="contacts__info-wrapper">
-                  <div class="contacts__info">
-                    <h3>Телефон:</h3>
-                    <a href="tel:88005555555">8-800-555-55-55</a>
-                  </div>
-                  <div class="contacts__info">
-                    <h3>Email:</h3>
-                    <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </main>
 
-      <footer class="footer">
+      <footer class="footer" data-test="footer">
         <div class="container">
           <div class="footer__wrapper">
             <h2 class="visually-hidden">Дополнительная информация.</h2>
