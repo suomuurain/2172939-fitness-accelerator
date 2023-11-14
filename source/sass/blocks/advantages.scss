@@ -10,7 +10,7 @@
   }
 
   @include vp-767 {
-    padding: 71px 0 68px;
+    padding: 71px 0 50px;
   }
 }
 
@@ -104,7 +104,7 @@
 
   &:last-child {
     @include vp-767 {
-      margin: -5px 0 0;
+      margin: 0;
       padding: 0;
     }
   }
@@ -199,7 +199,7 @@
 
 .advantages__info--add h3 {
   @include vp-767 {
-    margin: 0 0 7px;
+    margin: 0 0 11px;
   }
 }
 
@@ -244,7 +244,7 @@
   }
 
   @include vp-767 {
-    margin: 0 auto 5px;
+    margin: 5px auto 5px;
     padding: 30px 70px 39px;
     grid-row: 3/4;
   }

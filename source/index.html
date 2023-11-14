@@ -18,22 +18,22 @@
 
   <body>
     <div class="wrapper">
-      <header class="header">
-        <div class="container">
-          <div class="header__wrapper">
-            <a href="index.html" class="header__logo-link">
-              <picture>
-                <source media="(max-width: 767px)" srcset="./img/sprite/supergym-mobile.svg" width="101" height="17">
-                <source media="(max-width: 1365px)" srcset="./img/sprite/supergym-tablet.svg" width="110" height="19">
-                <img src="./img/sprite/supergym-desktop.svg" alt="Лого фитнес-центра SUPERGYM." width="119" height="20">
-              </picture>
-            </a>
-            <a class="header__phone-link" href="tel:88005555555">8-800-555-55-55</a>
-          </div>
-        </div>
-      </header>
-
       <main class="main">
+        <header class="main__header header">
+          <div class="container">
+            <div class="header__wrapper">
+              <a href="index.html" class="header__logo-link">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="./img/sprite/supergym-mobile.svg" width="101" height="17">
+                  <source media="(max-width: 1365px)" srcset="./img/sprite/supergym-tablet.svg" width="110" height="19">
+                  <img src="./img/sprite/supergym-desktop.svg" alt="Лого фитнес-центра SUPERGYM." width="119" height="20">
+                </picture>
+              </a>
+              <a class="header__phone-link" href="tel:88005555555">8-800-555-55-55</a>
+            </div>
+          </div>
+        </header>
+
         <section class="main__hero hero" data-test="hero">
           <div class="container">
             <div class="hero__wrapper">
@@ -84,7 +84,14 @@
                         <img class="video__media" src="https://i.ytimg.com/vi/9TZXsZItgdw/maxresdefault.jpg"  width="364" height="228" alt="Видео фитнес-центра SUPERGYM.">
                       </picture>
                       <div class="video__poster">
-                        <span class="visually-hidden">Постер к видео.</span>
+                        <picture>
+                          <source media="(max-width: 767px)" type="image/webp" srcset="./img/poster-video-blue-mobile.webp 1x, ./img/poster-video-blue-mobile@2x.webp 2x" width="320" height="167">
+                          <source media="(max-width: 1365px)" type="image/webp" srcset="./img/poster-video-blue.webp 1x, ./img/poster-video-blue@2x.webp 2x" width="265" height="167">
+                          <source media="(min-width: 1366px)" type="image/webp" srcset="./img/poster-video-blue.webp 1x, ./img/poster-video-blue@2x.webp 2x" width="364" height="228">
+                          <source media="(max-width: 767px)" srcset="./img/poster-video-blue-mobile.jpg 1x, ./img/poster-video-blue-mobile@2x.jpg 2x" width="320" height="167">
+                          <source media="(max-width: 1365px)" srcset="./img/poster-video-blue.jpg 1x, ./img/poster-video-blue@2x.jpg 2x" width="265" height="167">
+                          <img src="./img/poster-video-blue.jpg" srcset="./img/poster-video-blue.jpg 1x, ./img/poster-video-blue@2x.jpg 2x" width="364" height="228" alt="Постер к видео о тренажерном зале.">
+                        </picture>
                       </div>
                     </a>
                     <button class="video__button" aria-label="Запустить видео."></button>
@@ -116,7 +123,7 @@
                       </div>
                       <a href="#">Купить абонемент</a>
                     </div>
-                    <div class="subscription__element-wrapper">
+                    <div class="subscription__element-wrapper active-element">
                       <h3>Дневной</h3>
                       <span>с 8:00 до 17:00 </span>
                       <div class="subscription__price-wrapper">
@@ -196,6 +203,14 @@
                 </div>
               </div>
             </div>
+          </div>
+          <div class="subscription__decoration">
+            <picture>
+              <source media="(max-width: 1365px)" type="image/webp" srcset="./img/plates-tablet.webp 1x, ./img/plates-tablet@2x.webp 2x" width="327" height="423">
+              <source media="(min-width: 1366px)" type="image/webp" srcset="./img/plates-desktop.webp 1x, ./img/plates-desktop@2x.webp 2x" width="287" height="494">
+              <source media="(max-width: 1365px)" srcset="./img/plates-tablet.png 1x, ./img/plates-tablet@2x.png 2x" width="327" height="423">
+              <img src="./img/plates-desktop.png" srcset="./img/plates-desktop.png 1x, ./img/plates-desktop@2x.png 2x" width="287" height="494" alt="Диски для штанги.">
+            </picture>
           </div>
         </section>
 
@@ -818,62 +833,62 @@
           </div>
         </section>
 
-        <div data-test="reviews">
-          <section class="main__reviews reviews">
-            <div class="container">
-              <div class="reviews__wrapper">
-                <h2>Отзывы</h2>
-                <!-- Slider main container -->
-                <div class="reviews__swiper swiper">
-                  <!-- Additional required wrapper -->
-                  <div class="reviews__swiper-wrapper swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="reviews__slide swiper-slide">
-                      <div class="reviews__slide-wrapper">
-                        <picture>
-                          <source media="(max-width: 767px)" type="image/webp" srcset="./img/review-avatar-mobile.webp 1x, ./img/review-avatar-mobile@2x.webp 2x" width="68" height="68">
-                          <source media="(min-width: 1366px)" type="image/webp" srcset="./img/review-avatar-desktop.webp 1x, ./img/review-avatar-desktop@2x.webp 2x" width="80" height="80">
-                          <source media="(max-width: 767px)" srcset="./img/review-avatar-mobile.png 1x, ./img/review-avatar-mobile@2x.png 2x" width="68" height="68">
-                          <img src="./img/review-avatar-desktop.png" srcset="./img/review-avatar-desktop.png 1x, ./img/review-avatar-desktop@2x.png 2x" alt="Аватарка клиента." width="80" height="80">
-                        </picture>
-                        <span>Анна Орлова</span>
-                        <p>«Хожу в Supergym уже больше года. Нравится,&nbsp;что
-                          в&nbsp;клубе всегда чисто, тренажеры обновляют,
-                          персонал дружелюбный. Зал просторный, даже&nbsp;в
-                          вечернее время нет очередей»
-                        </p>
-                      </div>
-                    </div>
-
-                    <div class="reviews__slide swiper-slide">
-                      <div class="reviews__slide-wrapper">
-                        <picture>
-                          <source media="(max-width: 767px)" type="image/webp" srcset="./img/review-avatar-mobile.webp 1x, ./img/review-avatar-mobile@2x.webp 2x" width="68" height="68">
-                          <source media="(min-width: 1366px)" type="image/webp" srcset="./img/review-avatar-desktop.webp 1x, ./img/review-avatar-desktop@2x.webp 2x" width="80" height="80">
-                          <source media="(max-width: 767px)" srcset="./img/review-avatar-mobile.png 1x, ./img/review-avatar-mobile@2x.png 2x" width="68" height="68">
-                          <img src="./img/review-avatar-desktop.png" srcset="./img/review-avatar-desktop.png 1x, ./img/review-avatar-desktop@2x.png 2x" alt="Аватарка клиента." width="80" height="80">
-                        </picture>
-                        <span>Анна Орлова</span>
-                        <p>«Хожу в Supergym уже больше года. Нравится,&nbsp;что
-                          в клубе всегда чисто, тренажеры обновляют,
-                          персонал дружелюбный. Зал просторный, даже&nbsp;в
-                          вечернее время нет очередей»
-                        </p>
-                      </div>
+        <section class="main__reviews reviews" data-test="reviews">
+          <div class="container">
+            <div class="reviews__wrapper">
+              <h2>Отзывы</h2>
+              <!-- Slider main container -->
+              <div class="reviews__swiper swiper">
+                <!-- Additional required wrapper -->
+                <div class="reviews__swiper-wrapper swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="reviews__slide swiper-slide">
+                    <div class="reviews__slide-wrapper">
+                      <picture>
+                        <source media="(max-width: 767px)" type="image/webp" srcset="./img/review-avatar-mobile.webp 1x, ./img/review-avatar-mobile@2x.webp 2x" width="68" height="68">
+                        <source media="(min-width: 1366px)" type="image/webp" srcset="./img/review-avatar-desktop.webp 1x, ./img/review-avatar-desktop@2x.webp 2x" width="80" height="80">
+                        <source media="(max-width: 767px)" srcset="./img/review-avatar-mobile.png 1x, ./img/review-avatar-mobile@2x.png 2x" width="68" height="68">
+                        <img src="./img/review-avatar-desktop.png" srcset="./img/review-avatar-desktop.png 1x, ./img/review-avatar-desktop@2x.png 2x" alt="Аватарка клиента." width="80" height="80">
+                      </picture>
+                      <span>Анна Орлова</span>
+                      <p>«Хожу в Supergym уже больше года. Нравится,&nbsp;что
+                        в&nbsp;клубе всегда чисто, тренажеры обновляют,
+                        персонал дружелюбный. Зал просторный, даже&nbsp;в
+                        вечернее время нет очередей»
+                      </p>
                     </div>
                   </div>
-                  <!-- Navigation buttons -->
+
+                  <div class="reviews__slide swiper-slide">
+                    <div class="reviews__slide-wrapper">
+                      <picture>
+                        <source media="(max-width: 767px)" type="image/webp" srcset="./img/review-avatar-mobile.webp 1x, ./img/review-avatar-mobile@2x.webp 2x" width="68" height="68">
+                        <source media="(min-width: 1366px)" type="image/webp" srcset="./img/review-avatar-desktop.webp 1x, ./img/review-avatar-desktop@2x.webp 2x" width="80" height="80">
+                        <source media="(max-width: 767px)" srcset="./img/review-avatar-mobile.png 1x, ./img/review-avatar-mobile@2x.png 2x" width="68" height="68">
+                        <img src="./img/review-avatar-desktop.png" srcset="./img/review-avatar-desktop.png 1x, ./img/review-avatar-desktop@2x.png 2x" alt="Аватарка клиента." width="80" height="80">
+                      </picture>
+                      <span>Анна Орлова</span>
+                      <p>«Хожу в Supergym уже больше года. Нравится,&nbsp;что
+                        в клубе всегда чисто, тренажеры обновляют,
+                        персонал дружелюбный. Зал просторный, даже&nbsp;в
+                        вечернее время нет очередей»
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div class="reviews__swiper-btn reviews__swiper-btn--prev swiper-button-prev">
-                  <span class="visually-hidden">Нажать для включения предыдущего слайда.</span>
-                </div>
-                <div class="reviews__swiper-btn reviews__swiper-btn--next swiper-button-next">
-                  <span class="visually-hidden">Нажать для включения следующего слайда.</span>
-                </div>
+                <!-- Navigation buttons -->
+              </div>
+              <div class="reviews__swiper-btn reviews__swiper-btn--prev swiper-button-prev">
+                <span class="visually-hidden">Нажать для включения предыдущего слайда.</span>
+              </div>
+              <div class="reviews__swiper-btn reviews__swiper-btn--next swiper-button-next">
+                <span class="visually-hidden">Нажать для включения следующего слайда.</span>
               </div>
             </div>
-          </section>
+          </div>
+        </section>
 
+        <div data-test="footer">
           <section class="main__contact-form contact-form">
             <div class="contact-form__free-visit free-visit">
               <div class="free-visit__wrapper" data-form-validate="data-form-validate" data-callback="base">
@@ -926,68 +941,67 @@
               </div>
             </div>
           </section>
+
+          <footer class="main__footer footer">
+            <div class="container">
+              <div class="footer__wrapper">
+                <h2 class="visually-hidden">Дополнительная информация.</h2>
+                <a class="footer__logo-link" href="index.html">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="./img/sprite/supergym-mobile-footer.svg" width="90" height="16">
+                    <source media="(max-width: 1365px)" srcset="./img/sprite/supergym-tablet-footer.svg" width="99" height="17">
+                    <img src="./img/sprite/supergym-desktop-footer.svg" alt="Лого фитнес-центра SUPERGYM." width="106" height="19">
+                  </picture>
+                </a>
+                <ul class="footer__navigation-list" aria-label="Навигация.">
+                  <li class="footer__navigation-item">
+                    <a href="#" class="footer__navigation-link">Услуги</a>
+                  </li>
+                  <li class="footer__navigation-item">
+                    <a href="#subscription" class="footer__navigation-link">Абонементы</a>
+                  </li>
+                  <li class="footer__navigation-item">
+                    <a href="#promo" class="footer__navigation-link">Акции</a>
+                  </li>
+                  <li class="footer__navigation-item">
+                    <a href="#jury" class="footer__navigation-link">Тренеры</a>
+                  </li>
+                  <li class="footer__navigation-item">
+                    <a href="#" class="footer__navigation-link">Расписание</a>
+                  </li>
+                </ul>
+                <ul class="footer__social-list" aria-label="Социальные сети.">
+                  <li class="footer__social-item">
+                    <a class="footer__social-link" href="#">
+                      <span class="visually-hidden">Ссылка на Вконтакте.</span>
+                      <svg width="22" height="22">
+                        <use href="img/sprite.svg#vk"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="footer__social-item">
+                    <a class="footer__social-link" href="#">
+                      <span class="visually-hidden">Ссылка на Одноклассники.</span>
+                      <svg width="22" height="22">
+                        <use href="img/sprite.svg#ok"></use>
+                      </svg>
+                    </a>
+
+                  </li>
+                  <li class="footer__social-item">
+                    <a class="footer__social-link" href="#">
+                      <span class="visually-hidden">Ссылка на Реддит.</span>
+                      <svg width="22" height="22">
+                        <use href="img/sprite.svg#reddit"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </footer>
         </div>
       </main>
-
-      <footer class="footer" data-test="footer">
-        <div class="container">
-          <div class="footer__wrapper">
-            <h2 class="visually-hidden">Дополнительная информация.</h2>
-            <a class="footer__logo-link" href="index.html">
-              <picture>
-                <source media="(max-width: 767px)" srcset="./img/sprite/supergym-mobile-footer.svg" width="90" height="16">
-                <source media="(max-width: 1365px)" srcset="./img/sprite/supergym-tablet-footer.svg" width="99" height="17">
-                <img src="./img/sprite/supergym-desktop-footer.svg" alt="Лого фитнес-центра SUPERGYM." width="106" height="19">
-              </picture>
-            </a>
-            <ul class="footer__navigation-list" aria-label="Навигация.">
-              <li class="footer__navigation-item">
-                <a href="#" class="footer__navigation-link">Услуги</a>
-              </li>
-              <li class="footer__navigation-item">
-                <a href="#subscription" class="footer__navigation-link">Абонементы</a>
-              </li>
-              <li class="footer__navigation-item">
-                <a href="#promo" class="footer__navigation-link">Акции</a>
-              </li>
-              <li class="footer__navigation-item">
-                <a href="#jury" class="footer__navigation-link">Тренеры</a>
-              </li>
-              <li class="footer__navigation-item">
-                <a href="#" class="footer__navigation-link">Расписание</a>
-              </li>
-            </ul>
-            <ul class="footer__social-list" aria-label="Социальные сети.">
-              <li class="footer__social-item">
-                <a class="footer__social-link" href="#">
-                  <span class="visually-hidden">Ссылка на Вконтакте.</span>
-                  <svg width="22" height="22">
-                    <use href="img/sprite.svg#vk"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer__social-item">
-                <a class="footer__social-link" href="#">
-                  <span class="visually-hidden">Ссылка на Одноклассники.</span>
-                  <svg width="22" height="22">
-                    <use href="img/sprite.svg#ok"></use>
-                  </svg>
-                </a>
-
-              </li>
-              <li class="footer__social-item">
-                <a class="footer__social-link" href="#">
-                  <span class="visually-hidden">Ссылка на Реддит.</span>
-                  <svg width="22" height="22">
-                    <use href="img/sprite.svg#reddit"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </footer>
-
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

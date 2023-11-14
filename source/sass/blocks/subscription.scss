@@ -7,83 +7,46 @@
   padding: 127px 0 120px;
   z-index: 1;
 
-  &::after {
-    position: absolute;
-    content: "";
-    right: 0;
-    bottom: -95px;
-    width: 321px;
-    height: 384px;
-    background-repeat: no-repeat;
-    background-position: right;
-    z-index: 0;
-    background-image: image-set(
-      url("../img/plates-desktop.png") type("image/png"),
-      url("../img/plates-desktop.webp") type("image/webp")
-    );
-  }
-
-  @include retina {
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      &::after {
-        width: 287px;
-        height: 384px;
-        background-repeat: no-repeat;
-        background-image: image-set(
-          url("../img/plates-desktop@2x.png") type("image/png"),
-          url("../img/plates-desktop@2x.webp") type("image/webp")
-        );
-        background-size: cover;
-      }
-    }
-  }
-
   @include vp-1365 {
     padding: 100px 0 100px;
-
-    &::after {
-      width: 327px;
-      height: 423px;
-      bottom: -150px;
-      background-image: image-set(
-        url("../img/plates-tablet.png") type("image/png"),
-        url("../img/plates-tablet.webp") type("image/webp")
-      );
-    }
-
-    @include retina {
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        &::after {
-          width: 327px;
-          height: 384px;
-          bottom: -130px;
-          background-repeat: no-repeat;
-          background-image: image-set(
-            url("../img/plates-tablet@2x.png") type("image/png"),
-            url("../img/plates-tablet@2x.webp") type("image/webp")
-          );
-          background-size: cover;
-        }
-      }
-    }
   }
 
   @include vp-767 {
     padding: 74px 0 70px;
+  }
+}
 
-    &::after {
-      content: none;
-      background: none;
-    }
+.subscription__decoration {
+  position: absolute;
+  right: 0;
+  bottom: -150px;
+  width: 287px;
+  height: 494px;
+  z-index: 0;
 
-    @include retina {
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        &::after {
-          content: none;
-          background: none;
-        }
-      }
-    }
+  @include vp-1365 {
+    right: 0;
+    bottom: -150px;
+    width: 327px;
+    height: 423px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.subscription__decoration img {
+  width: 287px;
+  height: 494px;
+
+  @include vp-1365 {
+    width: 327px;
+    height: 423px;
+  }
+
+  @include vp-767 {
+    display: none;
   }
 }
 
@@ -333,7 +296,8 @@
   z-index: 2;
   transition: $trans-default;
 
-  &:hover {
+  &:hover,
+  &:focus {
     padding: 60px 70px 58px;
     border: 7px solid;
     border-image: $subscription-gradient;
@@ -361,6 +325,24 @@
     &:focus {
       padding: 45px 35px 43px;
     }
+  }
+}
+
+.subscription__element-wrapper.active-element {
+  padding: 60px 70px 58px;
+  border: 7px solid;
+  border-image: $subscription-gradient;
+  border-image-slice: 1;
+
+  @include vp-1365 {
+    padding: 61px 100px 58px;
+    border: 7px solid;
+    border-image: $subscription-gradient;
+    border-image-slice: 1;
+  }
+
+  @include vp-767 {
+    padding: 45px 35px 43px;
   }
 }
 
