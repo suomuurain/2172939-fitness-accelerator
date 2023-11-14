@@ -1,3 +1,5 @@
+import Swiper from '../vendor/swiper';
+
 const swiperJury = new Swiper('.jury__swiper', {
   // Optional parameters
   loop: true,
@@ -25,3 +27,5 @@ const swiperJury = new Swiper('.jury__swiper', {
     prevEl: '.jury__swiper-btn--prev',
   },
 });
+
+export {swiperJury};

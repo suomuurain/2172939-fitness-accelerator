@@ -1,3 +1,5 @@
+import Swiper from '../vendor/swiper';
+
 const swiperReviews = new Swiper('.reviews__swiper', {
   // Optional parameters
   slidesPerView: 1,
@@ -9,3 +11,5 @@ const swiperReviews = new Swiper('.reviews__swiper', {
     prevEl: '.reviews__swiper-btn--prev',
   },
 });
+
+export {swiperReviews};
