@@ -6,7 +6,7 @@
   padding: 120px 0 120px;
 
   @include vp-1365 {
-    padding: 101px 0 86px;
+    padding: 101px 0 87px;
   }
 
   @include vp-767 {
@@ -110,7 +110,7 @@
   }
 
   @include vp-1365 {
-    gap: 14px;
+    gap: 15px;
     border: none;
   }
 
@@ -169,7 +169,7 @@
 }
 
 .advantages__info h3 {
-  margin: 0 0 9px;
+  margin: 0 0 7px;
 
   color: $color-basic;
   font-family: $ff-roboto;
@@ -179,7 +179,7 @@
   line-height: 22px; /* 100% */
 
   @include vp-1365 {
-    margin: 0 0 12px;
+    margin: 0 0 11px;
 
     font-size: 20px;
     font-style: normal;
@@ -228,7 +228,7 @@
   grid-column: 2/3;
 
   margin: 4px 0 0;
-  padding: 70px 34px 76px;
+  padding: 70px 34px 77px;
   text-align: center;
   color: $color-white;
   background-color: $btn-border;
@@ -239,7 +239,7 @@
     width: 100%;
     max-width: 400px;
     margin: -2px auto 10px;
-    padding: 35px 95px 35px;
+    padding: 35px 95px 36px;
     grid-row: 2/3;
   }
 
@@ -297,10 +297,10 @@
 }
 
 .advantages__item--special-block span + span {
-  margin: 13px 0 35px;
+  margin: 13px 0 33px;
 
   @include vp-1365 {
-    margin: 25px 0 25px;
+    margin: 25px 0 24px;
   }
 
   @include vp-767 {

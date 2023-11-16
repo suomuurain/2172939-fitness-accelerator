@@ -49,6 +49,7 @@
 
   @include hover-focus {
     background: none url("../img/svg/video-play-hover-focus.svg") no-repeat;
+    outline: none;
   }
 
   @include active {

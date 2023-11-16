@@ -37,7 +37,7 @@
   text-align: left;
 
   @include vp-1365 {
-    padding: 34px 100px 34px 0;
+    padding: 36px 100px 32px 0;
 
     font-size: 22px;
     font-style: normal;
@@ -57,7 +57,7 @@
 
 .accordion__element--large h3 {
   @include vp-1365 {
-    padding: 25px 100px 25px 0;
+    padding: 26px 100px 24px 0;
   }
 
   @include vp-767 {
@@ -73,7 +73,7 @@
 
 .accordion__btn {
   position: absolute;
-  top: 24px;
+  top: 25px;
   right: 0;
   width: 40px;
   height: 40px;
@@ -84,13 +84,13 @@
   transition: $trans-default;
 
   @include vp-1365 {
-    top: 25px;
+    top: 26px;
   }
 
   @include vp-767 {
-    top: calc(50% - 16px);
-    width: 32px;
-    height: 32px;
+    top: calc(50% - 15px);
+    width: 30px;
+    height: 30px;
   }
 
   &::before {
@@ -174,12 +174,12 @@
   line-height: 24px; /* 133.333% */
 
   @include vp-1365 {
-    margin: -41px 0 25px;
+    margin: -39px 0 23px;
     padding: 0 120px 0 0;
   }
 
   @include vp-767 {
-    margin: -24px 0 21px;
+    margin: -25px 0 22px;
     padding: 0 15px 0 0;
 
     font-size: 16px;

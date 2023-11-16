@@ -11,7 +11,7 @@
 }
 
 .promo__wrapper h2 {
-  margin: 0 0 70px 0;
+  margin: 0 0 71px 0;
   padding: 0;
 
   color: $color-basic;
@@ -24,7 +24,7 @@
   text-align: center;
 
   @include vp-1365 {
-    margin: 0 0 39px 0;
+    margin: 0 0 38px 0;
 
     font-size: 42px;
     font-style: normal;
@@ -88,6 +88,7 @@
   }
 
   @include vp-767 {
+    padding: 46px 45px 40px;
     align-items: center;
     min-height: 300px;
   }
@@ -114,7 +115,7 @@
   }
 
   @include vp-767 {
-    margin: 0 0 9px;
+    margin: 0 0 8px;
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
@@ -123,7 +124,7 @@
 }
 
 .promo__special-block-info-wrapper b {
-  margin: 0 0 25px;
+  margin: 0 0 27px;
   padding: 0;
 
   color: $color-white;
@@ -134,7 +135,7 @@
   line-height: 70px; /* 100% */
 
   @include vp-1365 {
-    margin: 0 0 20px;
+    margin: 0 0 21px;
   }
 
   @include vp-767 {
@@ -170,7 +171,7 @@
 .promo__special-block-info-wrapper a {
   position: relative;
   margin: auto 0 0 0;
-  padding: 0 0 9px 0;
+  padding: 0 0 10px 0;
   align-self: flex-start;
   transition: $trans-default;
 
@@ -182,6 +183,10 @@
   line-height: 14px; /* 100% */
   letter-spacing: 0.7px;
   text-transform: uppercase;
+
+  @include vp-1365 {
+    padding: 0 0 9px 0;
+  }
 
   @include vp-767 {
     align-self: center;
@@ -248,7 +253,7 @@
   border: 7px solid;
   border-image-source: $promo-gradient;
   border-image-slice: 1;
-  padding: 23px 27px 24px;
+  padding: 24px 28px 24px;
   gap: 9px;
 
   @include vp-1365 {
@@ -260,7 +265,7 @@
     align-items: center;
     padding: 40px 42px 28px;
     text-align: center;
-    gap: 10px;
+    gap: 9px;
   }
 }
 
@@ -313,7 +318,7 @@
 
 .promo__block a {
   margin: auto 0 0;
-  padding: 0 0 9px 0;
+  padding: 0 0 10px 0;
   align-self: start;
   position: relative;
   transition: $trans-default;
