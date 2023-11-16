@@ -318,6 +318,7 @@
   line-height: 150%; /* 24px */
 
   @include vp-767 {
+    color: $color-white;
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
