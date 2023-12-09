@@ -1,8 +1,0 @@
-.btn {
-  cursor: pointer;
-  transition: opacity $trans-default;
-
-  &:disabled {
-    pointer-events: none;
-  }
-}
